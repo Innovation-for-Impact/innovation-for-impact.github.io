@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,7 +57,7 @@ body{
     outline: none;
     border: none;
     border-radius: 5rem;
-    background: white;
+    background: #15253aff;
     border-style: groove;
     border-color: #002e5f;
     font-size: 1.5rem;
@@ -71,7 +71,7 @@ body{
     outline: none;
     border: none;
     border-radius: 5rem;
-    background: white;
+    background: #15253aff;
     border-style: groove;
     border-color: #002e5f;
     font-size: 1.5rem;
@@ -85,7 +85,7 @@ body{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #002e5f;
+    background: #15253aff;
 }
 
 .communicate .btn:hover{
@@ -132,7 +132,7 @@ body{
 }
 
 .header .navbar ul li a:hover{
-    color: #00bfff;
+    color: #a3eae981;
     text-decoration: underline;
 }
 
@@ -150,7 +150,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/img1.jpg);
+    background-color: #15253aff;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -163,12 +163,12 @@ body{
 }
 
 .home h1{
-    color: #fff;
+    color: #a3eacc82;
     font-size: 5.5rem;
 }
 
 .home h2{
-    color: #fff;
+    color: #a3eacc82;
     font-size: 3rem;
 }
 
@@ -205,6 +205,7 @@ body{
 }
 
 .about{
+    background-color: #a3eab179;
     min-height: 55vh;
     width: 100vw;
     top: -3rem;
@@ -639,8 +640,8 @@ body{
 }
 
 .team .row .card .image img{
-    height: 13rem;
-    width: 13rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     border: .5rem solid #fff;
     box-shadow: 0 0 .5rem rgba(0,0,0,.3);
@@ -820,7 +821,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: white;
         }
 		.contact-form-phone
 		{
