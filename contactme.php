@@ -7,7 +7,6 @@
     $message = $_POST["message"];
 
     $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
-
     $status = mailfunction("", "Company", $body); //reciever
     if($status)
         echo '<center><h1>Thanks! We will contact you soon.</h1></center>';

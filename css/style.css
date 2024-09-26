@@ -106,6 +106,8 @@ body{
     left: 0;
     z-index: 100;
     position: fixed;
+    background: #002e5f;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.4);
 }
 
 .header .logo img{
@@ -150,7 +152,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/inngroup.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -162,8 +164,15 @@ body{
     overflow: hidden !important;
 }
 
+.home__title {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
 .home h1{
-    color: #fff;
+    color: #ffffff;
     font-size: 5.5rem;
 }
 
@@ -180,18 +189,18 @@ body{
     width: 100%;
     background: url(../images/wave.png);
     background-size: 100rem 11rem;
-    animation: waves 8s linear infinite;
+    animation: waves 16s linear infinite;
     background-repeat: repeat-x;
 }
 
 .home .wave2{
     animation-direction: reverse;
-    animation-duration: 6s;
+    animation-duration: 12s;
     opacity: .3;
 }
 
 .home .wave3{
-    animation-duration: 4s;
+    animation-duration: 8s;
     opacity: .5;
 }
 

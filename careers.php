@@ -27,5 +27,5 @@
 	{
 		echo "<center><h1>Error uploading file! Please try again.</h1></center>";
 	}
-
+        
 ?>
