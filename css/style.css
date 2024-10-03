@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lexend');
 
 *{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Lexend', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +23,7 @@ body{
     padding-top: 6rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #002e5f;
+    /* color: white; */
     position: relative;
     letter-spacing: .2rem;
 }
@@ -33,8 +33,8 @@ body{
     position: absolute;
     height: 2.5rem;
     width: 2.5rem;
-    border-top: .4rem solid #002e5f;
-    border-left: .4rem solid #002e5f;
+    /* border-top: .4rem solid #002e5f;
+    border-left: .4rem solid #002e5f; */
 }
 
 .faq .heading::before, .faq .heading::after{
@@ -57,7 +57,7 @@ body{
     outline: none;
     border: none;
     border-radius: 5rem;
-    background: #15253aff;
+    background: #15253A;
     border-style: groove;
     border-color: #002e5f;
     font-size: 1.5rem;
@@ -71,7 +71,7 @@ body{
     outline: none;
     border: none;
     border-radius: 5rem;
-    background: #15253aff;
+    background: #15253A;
     border-style: groove;
     border-color: #002e5f;
     font-size: 1.5rem;
@@ -85,7 +85,7 @@ body{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #15253aff;
+    background: #15253A
 }
 
 .communicate .btn:hover{
@@ -115,11 +115,14 @@ body{
     left: 0;
 }
 
+
+
 .header .navbar ul{
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 1000;
 }
 
 .header .navbar ul li{
@@ -150,7 +153,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-color: #15253aff;
+    background: linear-gradient(to bottom, #4bbcb8, #f4e43c);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -163,12 +166,12 @@ body{
 }
 
 .home h1{
-    color: #a3eacc82;
+    color: #15253A;
     font-size: 5.5rem;
 }
 
 .home h2{
-    color: #a3eacc82;
+    color: #15253A;
     font-size: 3rem;
 }
 
@@ -205,7 +208,7 @@ body{
 }
 
 .about{
-    background-color: #a3eab179;
+    background-color: black;
     min-height: 55vh;
     width: 100vw;
     top: -3rem;
@@ -213,14 +216,24 @@ body{
     position: relative;
     overflow: hidden;
     line-height: 10rem;
+    border-top-left-radius: 50% 100px;
+    border-top-right-radius: 50% 100px;
+}
+
+.about .heading {
+    width: 100vw;
+    color: white;
 }
 
 .about .row{
+    width: 60vw;
     line-height: 4rem;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 4rem;
+    text-align: center;
+    align-items: left;
+    justify-content: space-between;
+    padding: 0 20rem;
+    padding-top: 50px;
 }
 
 .about .row .content{
@@ -229,20 +242,44 @@ body{
 
 .about .row .content h3{
     font-size: 3rem;
-    color: black;
+    color: white;
+    border: white;
+    width: 500px;
+    height: 500px;
+    text-align: center;
 }
 
 .about .row .content p{
     font-size: 2rem;
-    color: #333;
+    color: white;
     padding: 1rem 0;
 }
+
+.about img {
+    width: 400px;
+    height: 300px;
+    float: right;
+    margin-right: 100px;
+    margin-top: -150px; /* Adjust this value to move the image up */
+    margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    .row .col-lg-4, .row .col-sm-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+
+
 .pt-5 .container .row .section-head p{
+    
     font-size: 2rem;
-    color: #333;
     padding: 1rem 0;
 }
   .section-head{
+    
     margin-bottom: 60px;
     text-align: center;
     margin-top: -8rem;
@@ -253,18 +290,22 @@ body{
     text-align: center;
   }
   .item{
-    background:#fff;
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     padding:30px 25px;
+    height: 100px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
+    border-color: black;
+    border-width: 20px;
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: -2rem;
-    border:5px solid rgba(0,0,0,0.07);
-    -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
   }
-  .item:hover{
+  /* .item:hover{
     background:#c8d8e4;
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
     -webkit-transition:all 0.5s ease 0s;
@@ -285,7 +326,7 @@ body{
     color:#2b6777;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
-  }
+  } */
   .item .icon{
     font-size:40px;
     margin-bottom: 25px;
@@ -295,30 +336,11 @@ body{
     line-height: 96px;
     border-radius: 50px;
   }
-  .item .feature_box_col_one{
-    background:rgba(247,198,5,0.2);
+  .item .feature_box{
+    
     color:#52ab98;
   }
-  .item .feature_box_col_two{
-    background: rgba(255, 77, 28, 0.15);
-    color:#52ab98;
-  }
-  .item .feature_box_col_three{
-    background:rgba(0,147,38,0.15);
-    color:#52ab98;
-  }
-  .item .feature_box_col_four{
-    background:rgba(0,108,255,0.15);
-    color:#52ab98;
-  }
-  .item .feature_box_col_five{
-    background:rgba(146,39,255,0.15);
-    color:#52ab98;
-  }
-  .item .feature_box_col_six{
-    background:rgba(23,39,246,0.15);
-    color:#52ab98;
-  }
+  
   .item p{
     font-size: 15px;
     line-height: 26px;
@@ -370,7 +392,6 @@ body{
     margin-bottom: 60px;
     background-size: 200%;
     background-position: left;
-
   }
   .section-head-1 p{
     color:#333;
@@ -379,19 +400,19 @@ body{
     text-align: center;
   }
   .item{
-    background:#fff;
     text-align: center;
     padding:30px 25px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
-    border-radius: 20px;
+    
+    border-color: black;
+    border-width: 20px;
     margin-bottom: 30px;
     border: 1px solid rgba(0,0,0,0.07);
     -webkit-transition:all 0.7s ease 0s;
     transition:all 0.7 ease 0s;
     
   }
-  .item:hover{
-    background-image: linear-gradient(to bottom right, #66ffcc 0%, #ffccff 100%);
+  /* .item:hover{
     background-position: right;
     transition: background-position 3s;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
@@ -410,7 +431,7 @@ body{
     color:#2b6777;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
-  }
+  } */
   .item .icon{
     font-size:40px;
     margin-bottom: 25px;
@@ -1147,7 +1168,7 @@ body{
     }
 
     .about{
-        min-height: 38vh;
+        min-height: 40vh;
         width: 100vw;
         margin-top: -3rem;
         margin-bottom: -2rem;
@@ -1168,6 +1189,7 @@ body{
     
     .about .row .content{
         text-align: center;
+        
     }
     
     .about .row .content h3{
