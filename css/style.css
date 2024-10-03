@@ -23,7 +23,7 @@ body{
     padding-top: 6rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #002e5f;
+    color: #15253aff;
     position: relative;
     letter-spacing: .2rem;
 }
@@ -33,13 +33,13 @@ body{
     position: absolute;
     height: 2.5rem;
     width: 2.5rem;
-    border-top: .4rem solid #002e5f;
-    border-left: .4rem solid #002e5f;
+    border-top: .4rem solid #15253aff;
+    border-left: .4rem solid #15253aff;
 }
 
 .faq .heading::before, .faq .heading::after{
-    border-top: .4rem solid #00bfff;
-    border-left: .4rem solid #00bfff;
+    border-top: .4rem solid #a3eab179;
+    border-left: .4rem solid #a3eab179;
 }
 
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
@@ -59,7 +59,7 @@ body{
     border-radius: 5rem;
     background: white;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #15253aff;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
@@ -73,7 +73,7 @@ body{
     border-radius: 5rem;
     background: white;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #15253aff;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
@@ -85,14 +85,14 @@ body{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #002e5f;
+    background: #15253aff;
 }
 
 .communicate .btn:hover{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #00bfff;
+    background: #a3eab179;
 }
 
 .header{
@@ -132,7 +132,7 @@ body{
 }
 
 .header .navbar ul li a:hover{
-    color: #00bfff;
+    color: #a3eab179;
     text-decoration: underline;
 }
 
@@ -150,7 +150,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/i2group.JPG);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -601,11 +601,11 @@ body{
 }
 
 .team .heading{
-    color: #00bfff;
+    color: #a3eab179;
 }
 
 .team .heading::before, .team .heading::after{
-    border-color: #00bfff;
+    border-color: #a3eab179;
 }
 
 .team .row{
@@ -654,7 +654,7 @@ body{
 
 .team .row .card .info span{
     font-size: 1.8rem;
-    color: #00bfff;
+    color: #a3eab179;
 }
 
 .team .row .card .info .icons a{
@@ -697,7 +697,7 @@ body{
 }
 
 .team .row .card::before{
-    background: #00bfff;
+    background: #a3eab179;
     top: -3rem;
     right: -4rem;
 }
@@ -809,7 +809,7 @@ body{
             border-radius: 5rem;
             background: white;
             border-style: groove;
-            border-color: #002e5f;
+            border-color: #15253aff;
             font-size: 1.5rem;
             cursor: pointer;
             height: 3.5rem;
@@ -820,7 +820,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #15253aff;
         }
 		.contact-form-phone
 		{
@@ -847,7 +847,7 @@ body{
         }
         
         .footer .footer-top {
-            background: #002e5f;
+            background: #15253aff;
             padding: 60px 0 30px 0;
         }
         
@@ -862,7 +862,7 @@ body{
             font-size: 18px;
             display: inline-block;
             background: #ffffff;
-            color: #00bfff;
+            color: #a3eab179;
             line-height: 1;
             padding: 9px 0;
             margin-right: 4px;
@@ -873,7 +873,7 @@ body{
         }
         
         .footer .footer-top .social-links a:hover {
-            background: #00bfff;
+            background: #a3eab179;
             color: #ffffff;
         }
         
@@ -925,7 +925,7 @@ body{
         }
         
         .footer .footer-top .footer-links ul a:hover {
-            color: #00bfff;
+            color: #a3eab179;
         }
         
         .footer .footer-top .footer-contact p {
@@ -955,8 +955,8 @@ body{
         
         .footer .footer-top .footer-newsletter input[type="submit"]:hover {
             color: #ffffff;
-            background: #00bfff;
-            border: 1px solid #00bfff;
+            background: #a3eab179;
+            border: 1px solid #a3eab179;
             letter-spacing: .2rem;
         }
         
@@ -984,7 +984,7 @@ body{
         .back-to-top {
             position: fixed;
             display: none;
-            background-color: #00bfff;
+            background-color: #a3eab179;
             color: #ffffff;
             width: 45px;
             height: 45px;
@@ -1033,7 +1033,7 @@ body{
         }
         
         .faq .row .accordion-container .accordion .accordion-header{
-            background-color: #00bfff;
+            background-color: #a3eab179;
             margin: 1rem 0;
             box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
             cursor: pointer;
@@ -1098,7 +1098,7 @@ body{
     }
 
     .header .fa-bars:hover{
-        color: #00bfff;
+        color: #a3eab179;
     }
 
     .header .navbar{
@@ -1304,7 +1304,7 @@ body{
             border-radius: 5rem;
             background: white;
             border-style: groove;
-            border-color: #002e5f;
+            border-color: #15253aff;
             font-size: 1.5rem;
             cursor: pointer;
             height: 3.5rem;
@@ -1315,7 +1315,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #15253aff;
         }
 		.contact-form-phone
 		{
