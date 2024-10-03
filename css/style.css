@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
     transition: all .2s linear;
     text-decoration: none;
 }
@@ -262,11 +261,23 @@ body{
     color: #333;
     padding: 1rem 0;
 }
+
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
     color: #333;
     padding: 1rem 0;
 }
+
+.pt-5 .container .row .col-full{
+    width: 100%;
+    text-align: center;
+}
+
+.pt-5 h1{
+    color: #F2F1F1;
+    font-weight: 100%;
+}
+
   .section-head{
     margin-bottom: 60px;
     text-align: center;
@@ -278,7 +289,7 @@ body{
     text-align: center;
   }
   .item{
-    background:#fff;
+    background: linear-gradient(179.44deg, #00BF63 0.51%, #19A38B 74.79%, #1ACDA6 99.56%);
     text-align: center;
     padding:30px 25px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
@@ -289,6 +300,10 @@ body{
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
   }
+
+  .col-lg-4 .col-sm-6{
+    background: linear-gradient(179.44deg, #00BF63 0.51%, #19A38B 74.79%, #1ACDA6 99.56%);
+  }
   .item:hover{
     background:#c8d8e4;
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
@@ -297,13 +312,14 @@ body{
   }
   .item:hover .item,
   .item:hover span.icon{
-    background:#fff;
+    background: linear-gradient(179.44deg, #00BF63 0.51%, #19A38B 74.79%, #1ACDA6 99.56%);
     border-radius: 10px;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
   }
   .item h6{
       font-size: 2rem;
+      color: white;
   }
   .item:hover h6,
   .item:hover p{
@@ -321,7 +337,7 @@ body{
     border-radius: 50px;
   }
   .item .feature_box_col_one{
-    background:rgba(247,198,5,0.2);
+    background: linear-gradient(179.44deg, #00BF63 0.51%, #19A38B 74.79%, #1ACDA6 99.56%);
     color:#52ab98;
   }
   .item .feature_box_col_two{
@@ -404,7 +420,7 @@ body{
     text-align: center;
   }
   .item{
-    background:#fff;
+    background: linear-gradient(179.44deg, #00BF63 0.51%, #19A38B 74.79%, #1ACDA6 99.56%);
     text-align: center;
     padding:30px 25px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
@@ -413,6 +429,8 @@ body{
     border: 1px solid rgba(0,0,0,0.07);
     -webkit-transition:all 0.7s ease 0s;
     transition:all 0.7 ease 0s;
+    width: 355px;
+    height: 484px;
     
   }
   .item:hover{
@@ -475,11 +493,25 @@ body{
     font-size: 15px;
     font-family: "Varela Round",Arial,"Helvetica Neue",Helvetica,sans-serif;
     line-height: 26px;
+    color: white;
   }
   .item h6{
     margin-bottom: 20px;
     font-family: "Varela Round",Arial,"Helvetica Neue",Helvetica,sans-serif;
-    color:#2f2f2f;
+    font-weight: bold;
+    color: white;
+  }
+
+  .picture-container{
+    width: auto;
+    height: auto;
+  }
+
+  .imageprojects{
+    width: 249px;
+    height: 260px;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
 
 .communicate{
