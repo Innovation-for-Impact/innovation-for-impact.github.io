@@ -99,21 +99,39 @@ document.addEventListener("DOMContentLoaded", function() {
   
 
   document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll('section'); // Select all sections
+    const sections = document.querySelectorAll('section');
 
     function handleScroll() {
-        sections.forEach(section => {
-            const sectionPosition = section.getBoundingClientRect().top; // Position of the section
-            const screenPosition = window.innerHeight / 1.3; // Trigger point for animation
+        const screenHeight = window.innerHeight;
+        const triggerHeight = screenHeight < 768 ? screenHeight / 1.1 : screenHeight / 1.3; // Different trigger points for mobile
 
-            if (sectionPosition < screenPosition) {
-                section.classList.add('in-view'); // Add class to make it visible
+        sections.forEach(section => {
+            const sectionPosition = section.getBoundingClientRect().top;
+
+            if (sectionPosition < triggerHeight) {
+                section.classList.add('in-view');
             } else {
-                section.classList.remove('in-view'); // Remove class when out of view
+                section.classList.remove('in-view');
             }
         });
     }
 
-    window.addEventListener('scroll', handleScroll); // Listen for scroll events
+    window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check on page load
+
+    function animateNumber(elementId, start, end, duration) {
+        const element = document.getElementById(elementId);
+        const range = end - start;
+        const increment = end > start ? 1 : -1;
+        const stepTime = Math.abs(Math.floor(duration / range));
+        let current = start;
+        const timer = setInterval(function() {
+            current += increment;
+            element.textContent = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+    animateNumber("number", 0, 1000, 2000);
 });
