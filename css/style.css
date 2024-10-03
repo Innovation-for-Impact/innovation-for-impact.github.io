@@ -129,7 +129,7 @@ body{
 }
 
 .header .navbar ul li a:hover{
-    color: #002e5f;
+    color: #34b916;
     text-decoration: underline;
 }
 
@@ -497,9 +497,18 @@ body{
   }
 
   .picture-container{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+    .picture-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 
 .communicate{
     text-align: center;
