@@ -8,6 +8,8 @@
     text-transform: capitalize;
     transition: all .2s linear;
     text-decoration: none;
+    
+    
 }
 
 html{
@@ -16,6 +18,9 @@ html{
 
 body{
     overflow-x: hidden;
+    background: linear-gradient(180deg, #6BBAB7, #FBF8DB);
+    background-size: 200% 200%;
+    animation: gradientAnimationVertical 4s ease-in-out alternate infinite;
 }
 
 section {
@@ -49,8 +54,8 @@ section.in-view {
 }
 
 .faq .heading::before, .faq .heading::after{
-    border-top: .4rem solid #00bfff;
-    border-left: .4rem solid #00bfff;
+    border-top: .4rem solid #a3eae9;
+    border-left: .4rem solid #a3eae9;
 }
 
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
@@ -68,9 +73,9 @@ section.in-view {
     outline: none;
     border: none;
     border-radius: 5rem;
-    background: white;
+    background: #a3eab1;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #15253a;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
@@ -79,12 +84,13 @@ section.in-view {
 }
 
 .communicate .btn{
+    margin: 20px;
     outline: none;
     border: none;
     border-radius: 5rem;
     background: white;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #15253a;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
@@ -96,14 +102,19 @@ section.in-view {
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #002e5f;
+    background: #15253a;
 }
 
 .communicate .btn:hover{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #00bfff;
+    background: #15253a;
+}
+
+.communicate h3{
+    color: #15253a;
+    margin-bottom: 20px;
 }
 
 .header{
@@ -120,9 +131,9 @@ section.in-view {
 }
 
 .header .logo img{
-    width: 130%;
-    height: 3rem;
-    top: 0;
+    width: 5rem;
+    height: 5rem;
+    top: 2rem;
     left: 0;
 }
 
@@ -139,11 +150,15 @@ section.in-view {
 
 .header .navbar ul li a{
     font-size: 2rem;
-    color: #fff;
+    background: linear-gradient(0deg, #6BBAB7, #FBF8DB);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimationVertical 4s ease-in-out infinite;
+    background-size: 100% 400%;
 }
 
 .header .navbar ul li a:hover{
-    color: #00bfff;
+    color: #a3eab1;
     text-decoration: underline;
 }
 
@@ -171,7 +186,11 @@ section.in-view {
     padding: 0 1rem;
     position: relative;
     overflow: hidden !important;
+    animation: fade-in 2s ease-out;
+    
 }
+
+
 
 .home h1{
     color: #fff;
@@ -189,6 +208,15 @@ section.in-view {
   @keyframes typing {
     50% {
       border-color: transparent;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
     }
   }
 
@@ -213,6 +241,17 @@ section.in-view {
     }
   }
   
+  @keyframes gradientAnimationVertical {
+    0% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
 
 .home .wave{
     position: absolute;
@@ -279,6 +318,13 @@ section.in-view {
     color: #333;
     padding: 1rem 0;
 }
+
+#clients-section{
+    background: #fff;
+    background-size: 200% 200%;
+    animation: gradientAnimation 4s ease-in-out alternate infinite;
+}
+
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
     color: #333;
@@ -502,6 +548,10 @@ section.in-view {
     background: #ffffff;
 }
 
+.testimonials .testimonial-item:hover {
+    transform: translateY(10px) scale(1.1);
+}
+
 .testimonials .testimonial-img {
     position: relative;
     background: #000000;
@@ -564,11 +614,11 @@ section.in-view {
     min-width: 100vw;
     min-height: 80vh;
     text-align: center;
-    background-color: #222;
+    background-color: #ffffff;
 }
 
 .team .heading{
-    color: #a3eae9;
+    color: #15253a;
 }
 
 .team .heading::before, .team .heading::after{
@@ -590,8 +640,6 @@ section.in-view {
     margin: 5rem 5rem;
     position: relative;
     overflow: hidden;
-    -webkit-filter: blur(2px) brightness(1.2);
-    transition: -webkit-filter 0.5s;
     transition: 0.5s;
     border: 4px solid;
     border-image-slice: 1;
@@ -601,7 +649,6 @@ section.in-view {
 
 .team .row .card:hover{
     transform: translateY(-10px);
-    -webkit-filter: blur(0px) brightness(1);
     cursor: pointer;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
@@ -632,9 +679,9 @@ section.in-view {
 }
 
 .team .row .card .info .icons a{
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding-top: 0 1rem;
-    font-size: 2rem;
+    font-size: 5ch;
     color: #333;
     align-items: center;
     justify-content: center;
@@ -796,7 +843,7 @@ section.in-view {
         }
         
         .footer .footer-top {
-            background: #002e5f;
+            background: #15253a;
             padding: 60px 0 30px 0;
         }
         
@@ -955,12 +1002,12 @@ section.in-view {
         }
 
         .faq{
-            display: none;
+            display: block;
             min-height: 70vh;
             width: 100vw;
             text-align: center;
             padding: 0 2rem;
-            background: url(../images/faq.jpg);
+            background: url(../images/eboard.JPG);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -983,7 +1030,7 @@ section.in-view {
         }
         
         .faq .row .accordion-container .accordion .accordion-header{
-            background-color: #00bfff;
+            background-color: #15253a;
             margin: 1rem 0;
             box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
             cursor: pointer;
@@ -998,14 +1045,14 @@ section.in-view {
             width: 5rem;
             line-height: 4rem;
             font-size: 2rem;
-            background: #333;
+            background: #15253a;
             color: #fff;
             clip-path: polygon(0% 0%,75% 0%,100% 50%,75% 100%,0% 100%); 
         }
         
         .faq .row .accordion-container .accordion .accordion-header h3{
             display: inline;
-            color: #333;
+            color: #a3eae9;
             font-weight: 400;
             padding-left: .5rem;
             font-size: 1.5rem;
@@ -1034,7 +1081,7 @@ section.in-view {
     }
 
     .header .logo img{
-        width: 20%;
+        width: 10%;
         height: 10rem;
         top: 0;
         left: 0;
@@ -1048,7 +1095,7 @@ section.in-view {
     }
 
     .header .fa-bars:hover{
-        color: #00bfff;
+        color: #a3eae9;
     }
 
     .header .navbar{
@@ -1166,21 +1213,7 @@ section.in-view {
         padding: 1rem 0;
     } 
 
-    .clients {
-        position: relative;
-        padding: 90px 0;
-        text-align: center;
-        margin-top: -15rem;
-        margin-bottom: -8rem;
-        animation: gradientAnimation 4s ease-in-out infinite;
-    }
-
-    .clients .section-header p {
-        padding-bottom: 10px;
-        margin-top: 2.5rem;
-        text-align: center;
-        font-size: 2rem;
-    }
+    
 
     .team{
         min-height: auto;
