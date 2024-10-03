@@ -17,7 +17,6 @@ body{
     overflow-x: hidden;
 }
 
-
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
     margin: 2rem;
     padding-top: 6rem;
@@ -303,14 +302,14 @@ body{
   .item:hover{
     background: #c8d8e4;
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
-    -webkit-transition:all 0.5s ease 0s;
-    transition:all 0.5s ease 0s;
+    -webkit-transition:all 0.5s ease 0.3s;
+    transition:all 0.5s ease 0.3;
   }
   .item:hover .item,
   .item:hover span.icon{
     background: linear-gradient(179.44deg, #00BF63 0.51%, #19A38B 74.79%, #1ACDA6 99.56%);
     border-radius: 10px;
-    -webkit-transition:all 0.5s ease 0s;
+    -webkit-transition:all 0.5s ease 0.3s;
     transition:all 0.5s ease 0s;
   }
   .item h6{
@@ -502,13 +501,6 @@ body{
     height: auto;
   }
 
-  .imageprojects{
-    width: 249px;
-    height: 260px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-
 .communicate{
     text-align: center;
     align-items: center;
@@ -653,12 +645,11 @@ body{
     background-color: #f2f2f2;
 }
 
-.team .heading{
-    color: #002e5f;
+.team .heading, .team h2{
+    color: #15253A;
 }
 
 .team #exec-board {
-    width: 100%;
     text-align: left;
     padding-top: 2em;
     padding-left: 4.5em;
@@ -715,8 +706,8 @@ body{
 }
 
 .team .row .card .info span{
-    font-size: 1.8rem;
-    color: #002e5f;
+    font-size: 1.5rem;
+    color: #15253a;
 }
 
 .team .row .card .info .icons a{
@@ -786,16 +777,6 @@ body{
     background-color: #fff;
 }
 
-.team .row .card .info .icons .fa-instagram:hover, .footer .icons .fa-instagram:hover{
-    color: #C13584;
-    text-decoration: none;
-}
-
-.team .row .card .info .icons .fa-linkedin:hover, .footer .icons .fa-linkedin:hover{
-    color: #2867B2;
-    text-decoration: none;
-}
-
 .team .row .card::before, .team .row .card::after{
     content: '';
     position: absolute;
@@ -805,11 +786,6 @@ body{
     z-index: -1;
 }
 
-.team .row .card::before{
-    background: #002e5f;
-    top: -3rem;
-    right: -4rem;
-}
 
 .contact-in
 		{
@@ -845,7 +821,7 @@ body{
 			height: 40px;
 			color: #000;
 			border: 1px solid #bcbcbc;
-			border-radius: 50px;
+			border-radius: 10px;
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
@@ -857,7 +833,7 @@ body{
 			height: 40px;
 			color: #000;
 			border: 1px solid #bcbcbc;
-			border-radius: 50px;
+			border-radius: 10px;
 			outline: none;
 			margin-bottom: 20px;
 			padding: 15px;
@@ -896,7 +872,7 @@ body{
             margin-left: 2rem;
             outline: none;
             border: none;
-            border-radius: 5rem;
+            border-radius: 1rem;
             background: white;
             border-style: groove;
             border-color: #002e5f;
@@ -1067,6 +1043,12 @@ body{
             margin-left: 1rem;
             margin-right: 2rem;
         }
+        .back-to-top {
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+        }
+
         
 @media (max-width: 1200px){
     .faq{
