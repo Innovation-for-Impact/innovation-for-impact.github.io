@@ -99,8 +99,8 @@
             <p>An application that matches civilians and professional handlers with a dog to assist in community events.</p>
           </div>
         </div>
-        <div class="col-full">
-            <button class="btn">More Projects</button>
+        <div class="col-full" tabindex="0">
+            <button class="btn" >More Projects</button>
         </div>
       </div>
     </div>
@@ -365,7 +365,9 @@
                 <input type="text" name="Last Name" placeholder="Last Name" class="contact-form-txt" required>
                 <p class="form-title">Email</p>
                 <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
-                <input type="submit" value="Submit" name="submit" class="contact-form-btn">
+                <div class="submit-btn" tabindex="0">
+                    <input type="submit" value="Submit" name="submit" class="contact-form-btn">
+                </div>
             </form>
         </div>
     </div>
