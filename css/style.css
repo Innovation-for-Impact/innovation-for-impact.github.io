@@ -5,13 +5,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
     text-decoration: none;
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 72.5%;
+}
+
+.navbar{
+    font-size: large;
+    color: white;
+}
+
+header{
+    color: white;
 }
 
 body{
@@ -35,9 +44,11 @@ body{
     height: 2.5rem;
     width: 2.5rem;
     border-top: .4rem solid #15253aff    ;
-    border-left: .4rem solid #002e5f;
+    border-left: .4rem solid #15253aff;
     font-family: 'Lexend';
 }
+
+
 
 .faq .heading::before, .faq .heading::after{
     border-top: .4rem solid #00bfff;
@@ -61,7 +72,7 @@ body{
     border-radius: 5rem;
     background: white;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #15253aff;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
@@ -75,7 +86,7 @@ body{
     border-radius: 5rem;
     background: white;
     border-style: groove;
-    border-color: #002e5f;
+    border-color: #15253aff;
     font-size: 1.5rem;
     cursor: pointer;
     height: 3.5rem;
@@ -87,7 +98,7 @@ body{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
-    background: #002e5f;
+    background: #15253aff;
 }
 
 .communicate .btn:hover{
@@ -118,29 +129,38 @@ body{
 }
 
 .header .navbar ul{
-    list-style-type: none;
+    list-style-type:circle;
+    color:white !important;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .header .navbar ul li{
     margin: 0 1.5rem;
 }
 
-.header .navbar ul li a{
-    font-size: 2rem;
-    color: #fff;
+.navbar a {
+    color: white !important;
+}
+
+.navbar {
+    background: #15253aff;
 }
 
 .header .navbar ul li a:hover{
     color: #a3eae981 50%;
     text-decoration: underline;
+    border: solid 5px white;
+    size: 200%;
 }
 
 .header .logo i{
     padding: 0.5rem;
 }
+
+
 
 .header .fa-bars{
     color: #fff;
@@ -152,7 +172,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/group_photo.JPG);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -336,7 +356,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 	color: #fff;
-	padding: 40px 20px;
+	padding: 20px 20px;
 }
 
 .counters .container {
@@ -619,8 +639,8 @@ body{
 }
 
 .team .row .card{
-    height: 35rem;
-    width: 25rem;
+    height: 28rem;
+    width: 19.5rem;
     background-color: #fff;
     text-align: center;
     margin: 5rem 5rem;
@@ -1126,7 +1146,7 @@ body{
     }
 
     .header .navbar ul li a{
-        color: grey;
+        color: black;
         font-size: 2.4rem;
     }
 
@@ -1139,10 +1159,13 @@ body{
     }
 
     .home h1{
-        color: #fff;
+        margin-top: 150px;
+        border: solid 2px #15253aff;
+        color:white;
         font-size: 4rem;
+        
     }
-    
+
     .home h2{
         color: #fff;
         font-size: 2rem;
