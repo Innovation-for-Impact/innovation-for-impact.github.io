@@ -48,6 +48,8 @@ $(document).ready(function(){
 
     $(".testimonials-carousel").owlCarousel({
         autoplay: true,
+        autoplayTimeout: 1500,
+        autoplaySpeed: 800, 
         dots: true,
         loop: true,
         responsive: { 0: {items: 1}, 576: {items: 2}, 768: {items: 3}, 992: {items: 4} }
@@ -74,4 +76,44 @@ $('.accordion-header').click(function(){
     $(this).children('span').text('-');
 });
 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "Innovation For Impact";
+    const typingSpeed = 100; 
+    let i = 0;
+  
+    function typeEffect() {
+      if (i < text.length) {
+        const span = document.createElement("span");
+        span.innerHTML = text.charAt(i);
+        document.getElementById("innovation").appendChild(span);
+        i++;
+        setTimeout(typeEffect, typingSpeed);
+      }
+    }
+  
+    typeEffect();
+  });
+  
+  
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('section'); // Select all sections
+
+    function handleScroll() {
+        sections.forEach(section => {
+            const sectionPosition = section.getBoundingClientRect().top; // Position of the section
+            const screenPosition = window.innerHeight / 1.3; // Trigger point for animation
+
+            if (sectionPosition < screenPosition) {
+                section.classList.add('in-view'); // Add class to make it visible
+            } else {
+                section.classList.remove('in-view'); // Remove class when out of view
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleScroll); // Listen for scroll events
+    handleScroll(); // Initial check on page load
 });
