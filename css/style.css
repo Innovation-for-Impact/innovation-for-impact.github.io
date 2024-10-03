@@ -17,6 +17,10 @@ body{
     overflow-x: hidden;
 }
 
+#home, #about, #projects, #team, #contact, #faq {
+    scroll-margin-top: 60px;
+}
+
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
     margin: 2rem;
     padding-top: 6rem;
@@ -145,6 +149,7 @@ body{
 }
 
 .home{
+    min-height: 100vh;
     background-color: #15253A;
     display: flex;
     flex-flow: column;
