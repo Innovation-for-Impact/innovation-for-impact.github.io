@@ -51,11 +51,11 @@ body{
 
 .header .navbar ul li a{
     font-size: 2rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 .header .navbar ul li a:hover{
-    color: #00bfff;
+    color: #18f418;
     text-decoration: underline;
 }
 
@@ -114,8 +114,8 @@ body{
     position: absolute;
     height: 2.5rem;
     width: 2.5rem;
-    border-top: .4rem solid #002e5f;
-    border-left: .4rem solid #002e5f;
+    border-top: .4rem solid #56b37d;
+    border-left: .4rem solid #5eba7d;
 }
 
 .heading::before{
@@ -244,7 +244,7 @@ body{
             border-radius: 5rem;
             background: white;
             border-style: groove;
-            border-color: #002e5f;
+            border-color: #025f00;
             font-size: 1.5rem;
             cursor: pointer;
             height: 3.5rem;
@@ -257,7 +257,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: #005f26;
         }
 		.career-form-phone
 		{
@@ -285,7 +285,7 @@ body{
 }
 
 .footer .footer-top {
-    background: #002e5f;
+    background: #005f0e;
     padding: 60px 0 30px 0;
 }
 
@@ -300,7 +300,7 @@ body{
     font-size: 18px;
     display: inline-block;
     background: #ffffff;
-    color: #00bfff;
+    color: #1fe260;
     line-height: 1;
     padding: 9px 0;
     margin-right: 4px;
@@ -311,7 +311,7 @@ body{
 }
 
 .footer .footer-top .social-links a:hover {
-    background: #00bfff;
+    background: #0b7509;
     color: #ffffff;
 }
 
@@ -363,7 +363,7 @@ body{
 }
 
 .footer .footer-top .footer-links ul a:hover {
-    color: #00bfff;
+    color: #00ff1e;
 }
 
 .footer .footer-top .footer-contact p {
@@ -393,8 +393,8 @@ body{
 
 .footer .footer-top .footer-newsletter input[type="submit"]:hover {
     color: #ffffff;
-    background: #00bfff;
-    border: 1px solid #00bfff;
+    background: #00ff15;
+    border: 1px solid #00ff2a;
     letter-spacing: .2rem;
 }
 
@@ -412,7 +412,7 @@ body{
 .back-to-top {
     position: fixed;
     display: none;
-    background-color: #00bfff;
+    background-color: #00ff59;
     color: #ffffff;
     width: 45px;
     height: 45px;
@@ -462,7 +462,7 @@ body{
     }
 
     .header .fa-bars:hover{
-        color: #00bfff;
+        color: #258616;
     }
 
     .header .navbar{
