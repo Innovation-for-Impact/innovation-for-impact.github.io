@@ -3,9 +3,11 @@
 :root {
     --mid-green: rgb(23, 106, 2);
     --light-green: rgb(79, 218, 167);
+    --greenish-white: #c9efc6;
 
     --primary-color: var(--mid-green);
     --secondary-color: var(--light-green);
+    --nav-item-hover-color: var(--greenish-white);
 }
 
 *{
@@ -46,8 +48,8 @@ body{
 }
 
 .faq .heading::before, .faq .heading::after{
-    border-top: .4rem solid var(--primary-color);
-    border-left: .4rem solid var(--primary-color);
+    border-top: .4rem solid var(--secondary-color);
+    border-left: .4rem solid var(--secondary-color);
 }
 
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
@@ -61,7 +63,7 @@ body{
     transform: rotate(180deg);
 }
 
-.row .btn{
+.github .btn {
     outline: none;
     border: 2px solid;
     border-radius: 1rem;
@@ -75,21 +77,6 @@ body{
 
     transition: all 250ms;
 }
-
-.github .btn {
-    outline: none;
-    border: none;
-    border-radius: 5rem;
-    background: white;
-    border-style: groove;
-    border-color: #085f00;
-    font-size: 1.5rem;
-    cursor: pointer;
-    height: 3.5rem;
-    width: 15rem;
-    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
-}
-
 
 .communicate .btn{
     outline: none;
@@ -106,20 +93,12 @@ body{
     transition: all 250ms;
 }
 
-.row .btn:hover{
+.github .btn:hover{
     letter-spacing: .1rem;
     opacity: .9;
     color: white;
     background: var(--primary-color);
 }
-
-.github .btn:hover{
-    letter-spacing: .1rem;
-    opacity: .9;
-    color: white;
-    background: #2eab38;
-}
-
 
 .communicate .btn:hover{
     letter-spacing: .1rem;
@@ -173,8 +152,7 @@ body{
 }
 
 .header .navbar ul li a:hover{
-    color: #c9efc6;
-    text-decoration: underline;
+    color: var(--nav-item-hover-color);
     top: -0.5rem;
 }
 
@@ -1104,7 +1082,7 @@ body{
         }
         
         .faq .row .accordion-container .accordion .accordion-header{
-            background-color: #14a222;
+            background-color: var(--primary-color);
             margin: 1rem 0;
             box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
             cursor: pointer;
@@ -1126,7 +1104,7 @@ body{
         
         .faq .row .accordion-container .accordion .accordion-header h3{
             display: inline;
-            color: #333;
+            color: white;
             font-weight: 400;
             padding-left: .5rem;
             font-size: 1.5rem;
