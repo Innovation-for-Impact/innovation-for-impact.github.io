@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
+    //top navigation bar that shows the things, this is the bar itself
      $('.fa-bars').click(function(){
         $(this).toggleClass('fa-times');
+        //this is the nav bar, self explainatory but i'm dum so this is here for me to see
         $('.navbar').toggleClass('nav-toggle');
     });
 
+    //for the whole window, given load event and scroll event, on these two events, do this
     $(window).on('load scroll',function(){
         $('.fa-bars').removeClass('fa-times');
         $('.navbar').removeClass('nav-toggle');
@@ -21,14 +24,17 @@ $(document).ready(function(){
 
     const counters = document.querySelectorAll('.counter');
     const speed = 120;
+
+    //for each item that has the attribute .counter
     counters.forEach(counter => {
+        //recursion to auto update the count value every few seconds
 	const updateCount = () => {
-		const target = +counter.getAttribute('data-target');
+		const target = +counter.getAttribute('data-target'); //stores the value of the target
 		const count = +counter.innerText;
 		const inc = target / speed;
 		if (count < target) {
 			counter.innerText = count + inc;
-			setTimeout(updateCount, 1);
+			setTimeout(updateCount, .5);
 		} else {
 			counter.innerText = target;
 		}
@@ -36,6 +42,7 @@ $(document).ready(function(){
 	  updateCount();
    });
 
+   //defines the carousels 
    (function ($) {
     "use strict";
     
@@ -55,6 +62,7 @@ $(document).ready(function(){
     
 })(jQuery);
 
+//applied to a button
 $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
         $('.back-to-top').fadeIn('slow');
@@ -62,6 +70,7 @@ $(window).scroll(function () {
         $('.back-to-top').fadeOut('slow');
     }
 });
+
 $('.back-to-top').click(function () {
     $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
     return false;
@@ -75,3 +84,5 @@ $('.accordion-header').click(function(){
 });
 
 });
+
+
