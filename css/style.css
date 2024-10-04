@@ -37,9 +37,27 @@ body{
     border-left: .4rem solid #15253aff;
 }
 
+.owl-carousel.clients-carousel img {
+    width: 100px; /* Adjust this value as per your design */
+    height: 100px; /* Make sure this matches the width for a consistent square container */
+    object-fit: contain; /* Keeps the entire logo visible while keeping its aspect ratio */
+    padding: 10px; /* Optional padding for spacing around the image */
+    display: block; /* Ensures no inline gap around the image */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Add these styles to center everything vertically and horizontally in the carousel */
+.owl-carousel.clients-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust this value to add space between each client logo */
+    height: 150px; /* Adjust to make sure there's enough space for different aspect ratios */
+}
+
 .faq .heading::before, .faq .heading::after{
-    border-top: .4rem solid #a3eab179;
-    border-left: .4rem solid #a3eab179;
+    border-top: .4rem solid #fff;
+    border-left: .4rem solid #fff;
 }
 
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
@@ -602,11 +620,11 @@ body{
 }
 
 .team .heading{
-    color: #a3eab179;
+    color: #fff;
 }
 
 .team .heading::before, .team .heading::after{
-    border-color: #a3eab179;
+    border-color: #fff;
 }
 
 .team .row{
@@ -650,12 +668,12 @@ body{
 
 .team .row .card .info h3{
     font-size: 2rem;
-    color: #333;
+    color: #15253aff;
 }
 
 .team .row .card .info span{
     font-size: 1.8rem;
-    color: #a3eab179;
+    color: #15253aff;
 }
 
 .team .row .card .info .icons a{
@@ -698,7 +716,7 @@ body{
 }
 
 .team .row .card::before{
-    background: #a3eab179;
+    background: #35b58f79;
     top: -3rem;
     right: -4rem;
 }
@@ -863,7 +881,7 @@ body{
             font-size: 18px;
             display: inline-block;
             background: #ffffff;
-            color: #a3eab179;
+            color: #15253aff;
             line-height: 1;
             padding: 9px 0;
             margin-right: 4px;
