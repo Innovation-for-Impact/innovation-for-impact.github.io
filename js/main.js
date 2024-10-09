@@ -50,6 +50,7 @@ $(document).ready(function(){
         autoplay: true,
         dots: true,
         loop: true,
+        //this describes the sequence of steps that it should take as a response
         responsive: { 0: {items: 2}, 768: {items: 4}, 900: {items: 6} }
     });
 
@@ -58,7 +59,24 @@ $(document).ready(function(){
         dots: true,
         loop: true,
         responsive: { 0: {items: 1}, 576: {items: 2}, 768: {items: 3}, 992: {items: 4} }
-    });
+    }).animate(
+        [
+            { opacity: 0 }, 
+            { opacity: 0.1, offset: 0.7 }, 
+            { opacity: 1 }
+        ],
+        2000,);
+
+    
+    
+        //animations n stuff are done in the css
+        //add interactive stuff like logic behind buttons here
+    
+    //optional expanding of the project carousel if you click on it
+    //what the hell is the class of this object ;w;
+    $(".container").click(function() {
+        
+    })
     
 })(jQuery);
 
@@ -84,5 +102,3 @@ $('.accordion-header').click(function(){
 });
 
 });
-
-
