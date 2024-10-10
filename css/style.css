@@ -17,13 +17,15 @@ html{
 
 body{
     overflow-x: hidden;
-    background: linear-gradient(180deg, #6BBAB7, #FBF8DB);
+    background: linear-gradient(180deg, #6BBAB7, #a3eab1);
     background-size: 200% 200%;
     animation: gradientAnimationVertical 4s ease-in-out alternate infinite;
+    z-index: 1;
 }
 
+
 section {
-    opacity: 0; 
+    opacity: 1; 
     transform: translateY(50px) scale(0.9); 
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
@@ -155,7 +157,7 @@ section.in-view {
 
 .header .navbar ul li a{
     font-size: 2rem;
-    background: linear-gradient(0deg, #6BBAB7, #FBF8DB);
+    background: linear-gradient(0deg, #6BBAB7, #a3eab1);
     -webkit-background-clip: text;
     color: transparent;
     animation: gradientAnimationVertical 4s ease-in-out infinite;
@@ -193,50 +195,54 @@ section.in-view {
 }
 
 .group-container {
+    height: 100vh;
+    overflow: hidden; 
+    position: relative;
+}
+
+.inner-container {
     display: flex;
     flex-direction: column; 
-    height: 100vh; 
-    animation: moveDown 30s ease-out infinite; 
-    align-items: center; 
-    position: relative; 
+    animation: moveDown 30s ease-out infinite;
 }
 
 .groupphoto {
-    width: 100vw; 
-    opacity: 1; 
-    position: relative; 
+    width: 100vw;
+    height: 100vh; 
+    object-fit: cover;
+    opacity: 1;
+    position: relative;
 }
 
 @keyframes moveDown {
     0% {
-        transform: translateY(0); 
-    }
-    20% {
         transform: translateY(0);
     }
-    25% {
-        transform: translateY(-118.5vh);
-    }
-    45% {
-        transform: translateY(-118.5vh); 
-    }
-    50% {
-        transform: translateY(-237vh); 
-    }
-    70% {
-        transform: translateY(-237vh); 
-    }
-    75% {
-        transform: translateY(-355.5vh); 
-    }
-    95% {
-        transform: translateY(-355.5vh); 
-    }
-    100% {
+    20% {
         transform: translateY(0); 
     }
+    25% {
+        transform: translateY(-100vh);
+    }
+    45% {
+        transform: translateY(-100vh);
+    }
+    50% {
+        transform: translateY(-200vh); 
+    }
+    70% {
+        transform: translateY(-200vh);
+    }
+    75% {
+        transform: translateY(-300vh); 
+    }
+    95% {
+        transform: translateY(-300vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
-
     
 
 @media screen and (max-width: 768px) {
@@ -696,10 +702,10 @@ section.in-view {
 
 .team .row .card{
     height: 35rem;
-    width: 25rem;
+    width: 23rem;
     background-color: #15253a;
     text-align: center;
-    margin: 5rem 5rem;
+    margin: 1rem 5rem;
     position: relative;
     overflow: hidden;
     transition: 0.5s;
@@ -1255,6 +1261,11 @@ section.in-view {
     } 
 
     .stats{
+        background: linear-gradient(180deg, #6BBAB7, #FBF8DB); 
+        border-radius: 15px;
+        padding: 20px; 
+        margin: 20px; 
+        box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
         min-height: 38vh;
         width: 100vw;
         margin-top: -3rem;
@@ -1448,4 +1459,252 @@ section.in-view {
         .faq .row .accordion-container{
             width: 100%;
         }
+}
+
+/* CLIENTS PAGE */
+
+.teamheader {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.projects {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    height: 150vh;
+
+}
+.page-title {
+    font-size: 7rem;
+    text-align: center;
+    padding-top: 6rem;
+    margin: 10px;
+    color: white;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.projects .heading {
+    margin: 2rem;
+    text-align: center;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #a3eab1;
+    position: relative;
+    letter-spacing: .2rem;
+}
+
+.projects .text p {
+    font-size: 2.5rem;
+    text-align: center;
+    color: 000;
+    z-index: 1;
+    padding-top: 40px;
+}
+
+/* Gallery Container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  /* Each Gallery Item */
+  .gallery-item {
+    position: relative;
+    width: 20vw;
+    height: 20vh;
+    z-index: 1;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+  }
+  
+  .gallery-item img {
+    transition: all 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    width: 25vw;
+    height: 40vh;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .gallery-item .info {
+    display: none;
+  }
+  
+   .gallery-item:hover .info {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+}
+  
+.gallery p{
+    font-size: 10px;
+    font-family: "Varela Round",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    line-height: 26px;
+  }
+  .gallery h6{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#2f2f2f;
+  } 
+ 
+  .bubble-container {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+}
+
+.bubble {
+    padding: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    min-width: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    text-align: center;
+    flex: 0 1 calc(33.33% - 20px);
+    white-space: normal;
+    z-index: 10;
+}
+
+.gallery-item:hover .bubble-container {
+    display: flex;
+}
+
+.gallery-item:hover .bubble {
+    display: flex;
+}
+
+.bubble:hover {
+    background-color: #e0f7fa;
+}
+
+.glowing-circle {
+    position: absolute;
+    width: 150vw;
+    height: 200vh;
+    background: linear-gradient(0deg, #15253a, #15253a, #15253a, #002e5f);
+    border-radius: 70%;
+    box-shadow: 0 0 50px 20px rgba(0, 150, 255, 0.6),
+                0 0 100px 40px rgba(0, 150, 255, 0.4),
+                0 0 150px 60px rgba(0, 150, 255, 0.2);
+    z-index: -4;
+    transform: translateY(20%);
+}
+
+/* STATS SECTION */
+.stats {
+    background: linear-gradient(45deg, #6BBAB7, #a3eab1); 
+    border-radius: 15px;
+    padding: 20px; 
+    margin: 20px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    animation: gradientAnimation 4s ease-in-out infinite;
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column; /* Stack the number and unit vertically */
+    align-items: center; /* Center items */
+    margin: 0 20px; /* Add some spacing on the sides */
+}
+
+.stats .number {
+    font-size: 75px;
+    text-align: center;
+    margin: 2rem 0;
+    color: white;
+    z-index: 100;
+    font-weight: bold;
+}
+
+.stats .units {
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    font-weight: b
+}
+
+/* Button container */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+/* Basic Button Styling */
+.filter-buttons button {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #c9ffd9; /* Green background */
+    color: rgb(0, 0, 0); /* White text */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Button shadow */
+}
+
+/* Hover effect with color and scale transition */
+.filter-buttons button:hover {
+    background-color: #d4f4ff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state (when the button is clicked) */
+.filter-buttons button:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+    background-color: #3e8e41; /* Even darker green when active */
+}
+
+/* Selected button (optional, add this class dynamically if a filter is selected) */
+.filter-buttons .selected {
+    background-color: #2e7031; /* Different color for selected state */
+    color: #fff;
 }

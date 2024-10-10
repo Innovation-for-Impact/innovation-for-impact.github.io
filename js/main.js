@@ -134,4 +134,60 @@ document.addEventListener("DOMContentLoaded", function() {
         }, stepTime);
     }
     animateNumber("number", 0, 1000, 2000);
+
 });
+
+// Filter projects function
+function filterGallery(filter) {
+    const items = document.querySelectorAll('.gallery-item');
+    
+    items.forEach(item => {
+        const itemFilter = item.getAttribute('data-filter');
+        
+        // Show all items if filter is 'all', otherwise filter by the attribute
+        if (filter === 'all' || itemFilter === filter) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+}
+
+let hasAnimated = false; // Flag to prevent multiple animations
+
+// Function to count up to the target number for each stat-item
+function countUp(numberElement, target) {
+    let count = 0;
+    const interval = setInterval(() => {
+        count++;
+        numberElement.textContent = count;
+
+        if (count >= target) {
+            clearInterval(interval);
+        }
+    }, 1000 / target); // Adjust speed according to the target
+}
+
+// Function to check if the user has scrolled to the middle of the stats section
+function checkScroll() {
+    const statsSection = document.querySelector('#stats');
+    const sectionRect = statsSection.getBoundingClientRect();
+    const sectionMiddle = sectionRect.top + sectionRect.height / 2;
+    const viewportHeight = window.innerHeight;
+
+    if (sectionMiddle <= viewportHeight && sectionMiddle >= 0 && !hasAnimated) {
+        const statItems = document.querySelectorAll('.stat-item');
+
+        // Loop through each stat-item and animate the count up
+        statItems.forEach(statItem => {
+            const target = parseInt(statItem.getAttribute('data-target')); // Get target from data-target attribute
+            const numberElement = statItem.querySelector('.number');
+            countUp(numberElement, target); // Call countUp for each stat-item
+        });
+
+        hasAnimated = true; // Prevent further animations
+    }
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', checkScroll);

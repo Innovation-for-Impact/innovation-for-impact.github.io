@@ -25,12 +25,11 @@
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#clients">clients</a></li>
-                <li><a href="#team">board</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#testimonials">Fall 24</a></li>
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
@@ -38,6 +37,7 @@
 
     <div id="home" class="home">
         <div class="group-container">
+            <div class="inner-container">
             <img src="../images/teamheadshot.JPG" alt="Team" class="groupphoto">
             <img src="../images/eboard.JPG" alt="Eboard" class="groupphoto">
             <img src="../images/groupogs.JPG" alt="OGs" class="groupphoto">
@@ -58,6 +58,7 @@
             <img src="../images/eboard.JPG" alt="Eboard" class="groupphoto">
             <img src="../images/groupogs.JPG" alt="OGs" class="groupphoto">
             <img src="../images/groupwomen.JPG" alt="Women" class="groupphoto">
+        </div>
         </div>
         <h1 id="innovation"></h1>
         <div class="wave wave1"></div>
@@ -78,64 +79,28 @@
   </section>
 
   <section id="stats" class="stats">
-    <h1 class="heading">Mission & Purpose</h1>
-    <div class="row">
-            <h3>At Innovation For Impact...</h3>
-            <p>We are committed to making </p> <h1> Impactful software solutions.</h1>
-        <p>Our goal is to empower our members to create innovative products while learning new skills.</p>
-            <a href="#"><button class="btn">Read More</button></a>
+    <div class="stats-container">
+        <div class="stat-item" data-target="28">
+            <h1 class="number">0</h1>
+            <div class="units">
+                <h3>MEMBERS</h3>
+            </div>
+        </div>
+        <div class="stat-item" data-target="4">
+            <h1 class="number">0</h1>
+            <div class="units">
+                <h3>CLIENTS</h3>
+            </div>
+        </div>
+        <div class="stat-item" data-target="10">
+            <h1 class="number">0</h1>
+            <div class="units">
+                <h3>MAJORS</h3>
+            </div>
+        </div>
     </div>
-  </section>
-
-<section id="clients">
-  <div id="clients-section" class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="section-head col-sm-12" id="service">
-          <h1>Our Clients</h1>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="item">
-                <span class="icon feature_box_col_one">
-                    <img src="../images/inora.png" alt="Inora" style="width: 100%; height: 20%;">
-                </span>
-                <h6><a href="https://inora.com/" target="_blank">Inora Technologies</a></h6>
-                <p>Improving Existing Technologies<br>Databases, C <br> Programming, Web Development</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="item">
-                <span class="icon feature_box_col_two">
-                    <img src="../images/lynkr.jpeg" alt="Lynkr" style="width: 40%; height: 10%;">
-                </span>
-                <h6><a href="https://www.instagram.com/lynkrapp/" target="_blank">Lynkr</a></h6>
-                <p>App Design<br>Work on Features<br>Student Audience<br>Tech: Swift<br>Other App Designs</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="item">
-                <span class="icon feature_box_col_three">
-                    <img src="../images/mtutor.png" alt="MTutor" style="width: 40%; height: 10%;">
-                </span>
-                <h6>MTutor</h6>
-                <p>App Design<br>Work on Features<br>UM Students<br>Tech: MongoDB, Firebase<br>Node.js, React Native</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="item">
-                <span class="icon feature_box_col_four">
-                    <img src="../images/oaklandk9.png" alt="Oakland" style="width: 40%; height: 10%;">
-                </span>
-                <h6>Oakland K-9</h6>
-                <p>Non-Profit Website<br>Non-Technical Client<br>Tech: Anything Frontend<br><br><br></p>
-            </div>
-        </div>
-        
-
-      </div>
-    </div>
-</div>
 </section>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -150,70 +115,10 @@
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-<section class="team" style="margin-top: 7rem;">
-  <h1 class="heading" style="margin-top: -1.5rem;" id="team">Board Members</h1>
-  <p></p>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/julia.jpeg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Julia Tauro</h3>
-              <span>President</span>
-              <div class="icons">
-                  <a href="https://www.linkedin.com/in/julia-tauro" class="fab fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/regan.jpeg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Regan McDonald</h3>
-              <span>Vice President</span>
-              <div class="icons">
-                  <a href="https://www.linkedin.com/in/regan-mcdonald/" class="fab fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/prahbleen.jpeg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Prahbleen Pawar</h3>
-              <span>Development Director</span>
-              <div class="icons">
-                  <a href="https://www.linkedin.com/in/prabhleen-pawar/" class="fab fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/chiho.jpeg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Chiho Sung</h3>
-              <span>Business Director</span>
-              <div class="icons">
-                  <a href="https://www.linkedin.com/in/chiho-sung/" class="fab fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
 
 <div class="communicate">
-    <h3>Contact Us</h3>
-    <div class="logo-container">
+    <h1 class="heading">Contact Us</h1>
+    <div class="logo-container" style="margin-bottom: 4rem;">
         <img src="../images/chihocontact.png" alt="Chiho" class="contactlogo">
         <img src="../images/prabhleencontact.png" alt="Prabhleen" class="contactlogo">
         <img src="../images/juliacontact.png" alt="Julia" class="contactlogo">
@@ -223,232 +128,10 @@
         <img src="../images/juliacontact.png" alt="Julia" class="contactlogo">
         <img src="../images/regancontact.png" alt="Regan" class="contactlogo">
     </div>
-    <a href="#contact"><button class="btn">Contact Now</button></a>
 </div>
 
 
-<section id="testimonials">
-    <div class="testimonials mt-100">
-        <div class="container">
-            <div class="section-header" style="text-align: center;">
-                <h2 style="margin-top: -15rem;">Fall 24 Cohort</h2>
-            </div>
-    
-            <div class="owl-carousel testimonials-carousel">
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/joshuakim.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Joshua Kim</h3>
-                        <h4>Freshman</h4>
-                        <p>
-                            Major: Data Science<br>Minor: Economics
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/karenchen.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Karen Chen</h3>
-                        <h4>Junior</h4>
-                        <p>
-                            Major: Computer Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/tiffanywong.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Tiffany Wong</h3>
-                        <h4>Freshman</h4>
-                        <p>
-                            Major: Data Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/nishakoshy.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Nisha Koshy</h3>
-                        <h4>Sophomore</h4>
-                        <p>
-                            Major: Computer Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/christianhernandez.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Christian Hernandez</h3>
-                        <h4>Freshman</h4>
-                        <p>
-                            Major: Computer Science<br>Minor: Business
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/miawoolever.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Mia Woolever</h3>
-                        <h4>Freshman</h4>
-                        <p>
-                            Major: Computer Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/cristiisavla-reyes.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Cristi Isalva-Reyes</h3>
-                        <h4>Sophomore</h4>
-                        <p>
-                            Major: Computer Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/gracephan.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Grace Phan</h3>
-                        <h4>Sophomore</h4>
-                        <p>
-                            Major: Computer Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/willzhang.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Will Zhang</h3>
-                        <h4>Sophomore</h4>
-                        <p>
-                            Major: Data Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/henrycao.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Henry Cao</h3>
-                        <h4>Freshman</h4>
-                        <p>
-                            Major: Undecided<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/avalevine.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Ava Levine</h3>
-                        <h4>Sophomore</h4>
-                        <p>
-                            Major: Computer Science<br>Minor: Art & Design
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/maryamalavi.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Maryam Alavi</h3>
-                        <h4>Junior</h4>
-                        <p>
-                            Major: Computer Science<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/sriyanmadvgvla.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Sriyam Madvgvla</h3>
-                        <h4>Sophomore</h4>
-                        <p>
-                            Major: Computer Science<br>Minor: Business, Math
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/eylinafan.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Eylina Fan</h3>
-                        <h4>Sophomore</h4>
-                        <p>
-                            Major: Computer Science<br>Minor: Math
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/jaslingarcia-morales.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Jaslin Garcia-Morales</h3>
-                        <h4>Senior</h4>
-                        <p>
-                            Major: Computer Science, UX Design<br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="./images/aileengonzalez.png" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Aileen Gonzalez</h3>
-                        <h4>Senior</h4>
-                        <p>
-                            Major: Computer Science, Sociology<br>Minor: QMSS, UX Design
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    </section>
-
     <section id="contact" class="contact">
-        <h1 class="heading">Get in Touch</h1>
     
     <div class="contact-in">
         <div class="contact-map">
@@ -467,18 +150,16 @@
     </section>
 
     <section class="faq">
-      <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
+      <h1 class="heading" style="margin-top: -2rem; color: #15253a;" id="faq">FAQ</h1>
       <div class="row">
           <div class="accordion-container">
               <div class="accordion">
                   <div class="accordion-header">
                       <span>+</span>
-                      <h3>How much will it cost?</h3>
+                      <h3>Who are we?</h3>
                   </div>
                   <div class="accordion-body">
-                      <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We’ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc. 
-                          Then we’ll be able to give you a ballpark figure. 
-                          If you’re still interested, we’ll come to your place of business and come up with a firm quote.</p>
+                      <p>We are a student run organization established at the University of Michigan in the year 2023</p>
                   </div>
               </div>
               <div class="accordion">
