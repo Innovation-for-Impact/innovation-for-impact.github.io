@@ -95,10 +95,14 @@ $('.back-to-top').click(function () {
 });
 
 $('.accordion-header').click(function(){
-    $('.accordion .accordion-body').slideUp(500);
-    $(this).next('.accordion-body').slideDown(500);
-    $('.accordion .accordion-header span').text('+');
-    $(this).children('span').text('-');
-});
-
-});
+    if ($(this).next('.accordion-body').is(':visible')) {
+        $(this).next('.accordion-body').slideUp(500); 
+        $(this).children('span').text('+');
+    } else {
+        $('.accordion .accordion-body').slideUp(500); 
+        $('.accordion .accordion-header span').text('+');
+        
+        $(this).next('.accordion-body').slideDown(500);
+        $(this).children('span').text('-');
+    }
+});})
