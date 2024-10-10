@@ -106,3 +106,8 @@ $('.accordion-header').click(function(){
         $(this).children('span').text('-');
     }
 });})
+
+
+$('.project').click(function() {
+    location.href = 'https://youtu.be/dQw4w9WgXcQ' //this can be changed to our project website if we have one
+})

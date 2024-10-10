@@ -409,6 +409,12 @@ body {
     color: #2f2f2f;
 }
 
+.project {
+    border: transparent;
+    background: transparent;
+    border-color: transparent;
+}
+
 .counters {
     background-image: url(../images/img2.jpg);
     background-size: cover;
