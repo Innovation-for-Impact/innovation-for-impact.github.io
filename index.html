@@ -438,11 +438,57 @@
                   <div class="col-lg-3 col-md-6 footer-newsletter">
                       <h4>Newsletter</h4>
                       <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
-                      <form action="" method="post">
-                          <input type="email" name="email"><input type="submit"  value="Subscribe">
+                      <form id="form" method="post">
+                          <input type="email" name="email"><input type="submit"  value="Subscribe" id="submit-button">
                       </form>
-                  </div>
 
+                      <p id="message" style="display: none;"></p>
+
+                      <script>
+                        document.getElementById("form").addEventListener("submit", function (e) {
+                            e.preventDefault();
+                            document.getElementById("message").textContent = "Submitting..";
+                            document.getElementById("message").style.display = "block";
+                            document.getElementById("submit-button").disabled = true;
+
+                            var formData = new FormData(this);
+                            var email = formData.get("email");
+
+                            // send a POST request to Google Apps Script
+                            fetch(
+                                "https://script.google.com/macros/s/AKfycby_lkDoXiEjAuIrqMHOK4gQHYrp-RzJtXui8xtY26Z8HkywuJmQjBTzufJofrt1s2wG1A/exec", 
+                                {
+                                    method: "POST",
+                                    body: new URLSearchParams(formData),
+                                    headers: {
+                                        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+                                    },
+                                }
+                            )
+                                .then(response => response.text())
+                                .then((data) => {
+                                    document.getElementById("message").textContent =
+                                      "Submitted";
+                                    document.getElementById("message").style.display = "block";
+                                    document.getElementById("message").style.backgroundColor = "green";
+                                    document.getElementById("message").style.color = "beige";
+                                    document.getElementById("submit-button").disabled = false;
+                                    document.getElementById("form").reset();
+
+                                    setTimeout(function () {
+                                    document.getElementById("message").textContent = "";
+                                    document.getElementById("message").style.display = "none";
+                                    }, 2600);
+                                })
+                                .catch(function (error) {
+                                console.error(error);
+                                document.getElementById("message").textContent =
+                                "Submit Error";
+                                document.getElementById("message").style.display = "block";
+                                });
+                            });
+                      </script>
+                  </div>
               </div>
           </div>
       </div>
