@@ -991,7 +991,7 @@ body{
             color: black;
         }
 
-        faq{
+        .faq{
             min-height: 55vh;
             width: 100vw;
             text-align: center;
