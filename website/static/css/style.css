@@ -1,7 +1,14 @@
+@import url("base.css");
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
 }
+
+/* Nav Bar */
+/* .header_nav{
+
+} */
 
 .hero {
     background: linear-gradient(to bottom, #A8E6CE, #FFD3B5);
