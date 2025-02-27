@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFI</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
@@ -12,7 +12,7 @@
             <ul>
                 <!-- Logo on the left -->
                 <li class="logo">
-                    <a href="/"><img src="static/images/logo.png" alt="Logo"></a>
+                    <a href="/"><img src="static/images/IFI_logo.png" alt="Logo"></a>
                 </li>
 
                 <!-- Main navigation items -->
@@ -36,5 +36,10 @@
             </ul>
         </nav>
     </header>
+
+    {% block content %}
+    {% endblock %}
+
+    {% include "footer.html" %}
 </body>
 </html>

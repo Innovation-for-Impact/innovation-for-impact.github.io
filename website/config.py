@@ -9,6 +9,8 @@ APPLICATION_ROOT = '/'
 # File Upload to var/uploads/
 WEBSITE_ROOT = pathlib.Path(__file__).resolve().parent.parent
 UPLOAD_FOLDER = WEBSITE_ROOT/'var'/'uploads'
+LINKEDIN = "https://www.linkedin.com/company/impact-umich"
+INSTAGRAM = "https://www.instagram.com/impact_umich/"
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
 

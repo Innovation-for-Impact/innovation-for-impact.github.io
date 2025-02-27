@@ -6,7 +6,7 @@ CREATE TABLE team(
   email VARCHAR(40) NOT NULL,
   linkedin VARCHAR(50) NOT NULL,
   filename VARCHAR(64) NOT NULL,
-  role VARCHAR()
+  role VARCHAR(20),
   created DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY(username)
+  PRIMARY KEY(uniqname)
 );
