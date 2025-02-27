@@ -1,0 +1,12 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE team(
+  uniqname VARCHAR(20) NOT NULL,
+  fullname VARCHAR(40) NOT NULL,
+  email VARCHAR(40) NOT NULL,
+  linkedin VARCHAR(50) NOT NULL,
+  filename VARCHAR(64) NOT NULL,
+  role VARCHAR()
+  created DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY(username)
+);
