@@ -8,3 +8,4 @@
 ## Virutal Environement 
 1. python3 -m venv env (Creates the environment)
 2. source env/bin/activate (Activates the environment)
+3. To start a local server for testing use python -m http.server 8000

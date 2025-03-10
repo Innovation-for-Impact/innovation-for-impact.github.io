@@ -1,0 +1,57 @@
+@import url("base.css");
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Nav Bar */
+/* TODO: Han please put your CSS here */
+/* .header_nav{
+
+} */
+
+.hero {
+    background: linear-gradient(to bottom, #A8E6CE, #FFD3B5);
+    text-align: center;
+    padding: 100px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mission-box {
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.services .card {
+    background: #F8F9FA;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.clients img {
+    width: 100px;
+    margin: 10px;
+}
+
+.testimonials .card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+footer {
+    background-color: #15253aff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
