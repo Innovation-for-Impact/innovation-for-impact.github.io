@@ -14,9 +14,9 @@ header {
 /* Navigation Bar */
 .header_nav {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    vertical-align: middle;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -25,11 +25,23 @@ header {
 .header_nav ul {
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
+    align-items: center;  /* Vertically centers the list items */
     margin-left: auto;
 }
 
 .header_nav ul li {
     margin: 0 15px;
+}
+
+/* Logo Styling */
+.header_nav .logo{
+    display: flex;  /* Makes sure the logo takes up all available space to the left */
+    align-items: center; /* Centers the logo vertically */
+}
+
+.header_nav .logo img {
+    height: 80px; /* Adjust logo size */
 }
 
 .header_nav a {
@@ -44,33 +56,32 @@ header {
     color: #a3eae981; /* Yellow color on hover */
 }
 
-/* Logo Styling */
-.header_nav .logo img {
-    height: 40px; /* Adjust logo size */
-}
-
 /* Dropdown Menu */
 .dropdown {
     position: relative;
 }
 
-.dropdown-content {
-    display: none;
+/* Hide the dropdown content initially */
+.dropdown-content{
+    display: none;  /* Hidden by default */
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #15253aff;
+    background-color: #15253aff; /* Background color for the dropdown */
     width: 200px;
     list-style-type: none;
     padding: 0;
+    z-index: 10;  /* Ensure it's above other content */
 }
 
+/* Show the dropdown content when the parent dropdown is hovered */
+.dropdown:hover .dropdown-content{
+    display: block;  /* Show the dropdown when hovering over parent */
+}
+
+/* Optional: Styling for the dropdown items */
 .dropdown-content li {
     padding: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .dropdown-content a {
@@ -81,13 +92,14 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1c40f;
+    background-color: #f1c40f; /* Color change on hover*/
 }
 
 /* Chevron Styling */
 .chevron {
     margin-left: 5px;
     font-size: 12px;
+    vertical-align: middle;
 }
 
 /* Button Styling for Contact Us */
@@ -96,7 +108,7 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    color: 15253aff;
+    color: #15253aff;
     transition: background-color 0.3s ease;
 }
 
