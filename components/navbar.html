@@ -1,28 +1,24 @@
-<header>
+<!-- TODO: Link all the pages -->
+<header class="navbar">
     <nav class="header_nav">
         <div class="logo">
-            <!-- Logo on the left -->
-            <a href="/"><img src="/static/images/IFI_logo.png" alt="Logo"></a>
+            <img src="../static/images/IFI_logo.png" alt="Logo"> <!-- Updated path -->
         </div>
-        <ul>
-            <!-- Main navigation items -->
-            <li><a href="/index.html" class="home">Home</a></li>
+        <ul class="nav-links">
+            <li><a href="#" class="home">Home</a></li>
 
-            <!-- Clients Dropdown with Chevron -->
+            <!-- Dropdown for "Our Projects" -->
             <li class="dropdown">
-                <a href="javascript:void(0)" class="clients">Clients <span class="chevron">▼</span></a>
+                <a href="../pages/projects.html">Projects </a>
                 <ul class="dropdown-content">
-                    <li><a href="/pages/internal.html">Internal</a></li>
-                    <li><a href="/pages/external.html">External</a></li>
+                    <li><a href="/projects/#internal-client">Internal</a></li>
+                    <li><a href="/projects/#external-client">External</a></li>
                 </ul>
             </li>
 
-            <!-- Other Links -->
-            <li><a href="/pages/our-team.html">Our Team</a></li>
-            <li><a href="/pages/recruitment.html">Recruitment</a></li>
-
-            <!-- Contact Us as a button -->
-            <li><a href="/contact" class="contact-button">Contact Us</a></li>
+            <li><a href="../pages/our-team.html">Our team</a></li>
+            <li><a href="../pages/recruitment.html">Recruitment</a></li>
+            <li><a href="../pages/contact-us.html" class="contact-us-link">Contact Us</a></li>
         </ul>
     </nav>
 </header>

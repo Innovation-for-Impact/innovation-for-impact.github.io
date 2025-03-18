@@ -14,7 +14,6 @@ header {
 /* Navigation Bar */
 .header_nav {
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -22,11 +21,11 @@ header {
     padding: 0 20px;
 }
 
+/* Navbar Links */
 .header_nav ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
-    align-items: center;  /* Vertically centers the list items */
+    align-items: center;
     margin-left: auto;
 }
 
@@ -35,25 +34,33 @@ header {
 }
 
 /* Logo Styling */
-.header_nav .logo{
-    display: flex;  /* Makes sure the logo takes up all available space to the left */
-    align-items: center; /* Centers the logo vertically */
+.header_nav .logo {
+    display: flex;
+    align-items: center;
 }
 
 .header_nav .logo img {
     height: 80px; /* Adjust logo size */
 }
 
+/* Navbar Links Styling */
 .header_nav a {
     text-decoration: none;
-    color: #fff; /* White text color for links */
+    color: #fff; /* White text color */
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
+/* Highlight active menu item */
+.header_nav a.active {
+    color: #a3eacc;
+    font-weight: bold;
+}
+
+/* Navbar Hover Effect */
 .header_nav a:hover {
-    color: #a3eae981; /* Yellow color on hover */
+    color: #a3eacc;
 }
 
 /* Dropdown Menu */
@@ -61,25 +68,26 @@ header {
     position: relative;
 }
 
-/* Hide the dropdown content initially */
-.dropdown-content{
-    display: none;  /* Hidden by default */
+/* Hide dropdown content initially */
+.dropdown-content {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #15253aff; /* Background color for the dropdown */
-    width: 200px;
+    background-color: #15253aff;
+    width: 180px;
     list-style-type: none;
     padding: 0;
-    z-index: 10;  /* Ensure it's above other content */
+    z-index: 10;
+    border-radius: 8px; /* Rounded dropdown */
 }
 
-/* Show the dropdown content when the parent dropdown is hovered */
-.dropdown:hover .dropdown-content{
-    display: block;  /* Show the dropdown when hovering over parent */
+/* Show dropdown when hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-/* Optional: Styling for the dropdown items */
+/* Dropdown Links */
 .dropdown-content li {
     padding: 10px;
 }
@@ -92,7 +100,8 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1c40f; /* Color change on hover*/
+    background-color: #1abc9c;
+    border-radius: 4px;
 }
 
 /* Chevron Styling */
@@ -102,18 +111,22 @@ header {
     vertical-align: middle;
 }
 
-/* Button Styling for Contact Us */
+/* Contact Us Button - Oval Shape */
 .contact-button {
     background-color: #a3eacc82;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 25px; /* Increased padding for a more oval look */
+    border-radius: 50px; /* Fully rounded edges */
     font-weight: bold;
     color: #15253aff;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid transparent;
 }
 
+/* Button Hover Effect */
 .contact-button:hover {
-    background-color: #e67e22; /* Change to orange on hover */
+    background-color: #1abc9c; /* Brighter green */
+    color: white;
+    transform: scale(1.05);
 }
 
 /* Responsive Design for smaller screens */
@@ -126,7 +139,6 @@ header {
     .header_nav ul {
         flex-direction: column;
         width: 100%;
-        padding-left: 0;
     }
 
     .header_nav ul li {

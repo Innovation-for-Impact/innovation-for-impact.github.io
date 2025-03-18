@@ -1,16 +1,168 @@
-@import url("navbar.css");
+/* ===========================
+Basic Reset & General Styles
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* Added Inter font import */
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Nav Bar */
-/* TODO: Han please put your CSS here */
-/* .header_nav{
+body {
+    font-family: 'Inter', sans-serif;
+    color: #192538; /* Ensuring consistent text color */
+}
 
-} */
+/* ===========================
+    Navbar Styling
+    =========================== */
+header {
+    background-color: #15253aff; /* Dark background color */
+    padding: 10px 0;
+}
 
+/* Navigation Bar */
+.header_nav {
+    display: flex;
+    justify-content: space-between;  /* Space between logo and menu items */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;   /* Add some padding for spacing */
+    background-color: #15253aff;  /* Dark background */
+}
+
+/* Navbar Links */
+.header_nav .nav-links { /* More specific selector */
+    list-style: none;
+    display: flex;          /* Ensure horizontal layout */
+    margin-left: auto;
+    align-items: center;
+    padding: 0;
+}
+
+.header_nav .nav-links li { /* More specific selector */
+    margin: 0 15px;
+}
+
+/* Logo Styling */
+.header_nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_nav .logo img {
+    height: 80px; /* Adjust logo size */
+}
+
+/* Navbar Links Styling */
+.header_nav a {
+    text-decoration: none;
+    color: white;          /* White text color */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 12px 15px;
+}
+
+/* Active and Hover Effects */
+.header_nav a.active {
+    color: #a3eacc;        /* Highlight color for active */
+    font-weight: bold;
+}
+
+.header_nav a:hover {
+    color: #a3eacc;        /* Hover color */
+}
+
+/* Contact Us Link Styling */
+.header_nav .nav-links a.contact-us-link { /* New class for Contact Us link */
+    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 15px; /* Match other link padding */
+    border-radius: 50px; /* Optional: add rounded corners */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown .dropdown-content { /* More specific selector */
+    display: none;          /* Hide initially */
+    position: absolute;
+    top: 100%; /* Corrected: Position below the dropdown trigger */
+    left: 0;
+    background-color: #15253aff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Links */
+.dropdown .dropdown-content li { /* More specific selector */
+    display: block;
+    padding: 10px;
+}
+
+.dropdown .dropdown-content a { /* More specific selector */
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Dropdown Hover Effect */
+.dropdown .dropdown-content a:hover {
+    background: #1abc9c;
+    border-radius: 4px;
+}
+
+/* Chevron Styling */
+.chevron {
+    margin-left: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+
+
+/* ===========================
+    Responsive Design
+    =========================== */
+@media (max-width: 768px) {
+    .header_nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header_nav .nav-links { /* More specific selector */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header_nav .nav-links li { /* More specific selector */
+        margin: 10px 0;
+    }
+
+    .dropdown .dropdown-content { /* More specific selector */
+        width: 100%;
+    }
+}
+
+/* ===========================
+    General Content Styling
+    =========================== */
 .hero {
     background: linear-gradient(to bottom, #A8E6CE, #FFD3B5);
     text-align: center;
@@ -48,10 +200,38 @@ body {
     margin: 10px;
 }
 
+/* ===========================
+    Footer Styling
+    =========================== */
 footer {
     background-color: #15253aff;
     color: white;
     padding: 20px;
     display: flex;
     justify-content: center;
+}
+
+/* Footer Text Hover Effect */
+footer a {
+    color: #a3eacc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #1abc9c;
+}
+
+/* ===========================
+    Animations
+    =========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,19 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-    async function loadComponent(id, file) {
-        let container = document.getElementById(id);
-        if (container) {
-            try {
-                let response = await fetch(file);
-                if (!response.ok) throw new Error(`Failed to load ${file}`);
-                let html = await response.text();
-                container.innerHTML = html;
-            } catch (error) {
-                console.error(error);
-                container.innerHTML = `<p style="color: red;">Error loading ${file}</p>`;
-            }
-        }
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOMContentLoaded event fired");
 
-    loadComponent("navbar", "/components/navbar.html");
-    loadComponent("footer", "/components/footer.html");
+    const loadNavbar = fetch('./components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            console.log("Navbar HTML fetched");
+            document.getElementById('navbar').innerHTML = data;
+            console.log("Navbar HTML inserted");
+        });
+
+    const loadFooter = fetch('./components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            console.log("Footer HTML fetched");
+            document.getElementById('footer').innerHTML = data;
+            console.log("Footer HTML inserted");
+        });
+
+    Promise.all([loadFooter]).then(() => {
+        console.log("Components loaded successfully");
+    });
 });
