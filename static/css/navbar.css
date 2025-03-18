@@ -82,9 +82,9 @@ header {
     border-radius: 8px; /* Rounded dropdown */
 }
 
-/* Show dropdown when hovered */
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Show the dropdown content when the parent dropdown is hovered */
+.dropdown:hover .dropdown-content{
+    display: initial;  /* Show the dropdown when hovering over parent */
 }
 
 /* Dropdown Links */
