@@ -76,7 +76,7 @@ header {
 
 /* Show the dropdown content when the parent dropdown is hovered */
 .dropdown:hover .dropdown-content{
-    display: block;  /* Show the dropdown when hovering over parent */
+    display: initial;  /* Show the dropdown when hovering over parent */
 }
 
 /* Optional: Styling for the dropdown items */

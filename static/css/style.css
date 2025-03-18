@@ -53,5 +53,12 @@ footer {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer > div {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
 }
