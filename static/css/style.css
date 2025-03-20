@@ -164,7 +164,8 @@ header {
     General Content Styling
     =========================== */
 .hero {
-    background: linear-gradient(to bottom, #A8E6CE, #FFD3B5);
+    background-color: #15253aff;
+    color: white;
     text-align: center;
     padding: 100px 0;
     font-size: 24px;
@@ -172,10 +173,9 @@ header {
 }
 
 .mission-box {
-    background: black;
+    background: #15253aff;
     color: white;
     padding: 20px;
-    border-radius: 10px;
     text-align: center;
 }
 
