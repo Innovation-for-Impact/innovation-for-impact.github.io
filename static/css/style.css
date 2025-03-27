@@ -179,6 +179,23 @@ header {
     text-align: center;
 }
 
+.mission-box .left{
+    width: 50%;
+}
+
+.mission-box .right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mission-box .highlight{
+    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
+    -webkit-background-clip: text; /* Clips gradient to the text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
+    display: inline; /* Ensures proper text rendering */
+}
+
 .services .card {
     background: #F8F9FA;
     padding: 20px;
