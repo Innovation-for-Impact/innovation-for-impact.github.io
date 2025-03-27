@@ -186,7 +186,7 @@ header {
 .mission-box .right{
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    float: right;
 }
 
 .mission-box .highlight{
