@@ -166,10 +166,39 @@ header {
 .hero {
     background-color: #15253aff;
     color: white;
-    text-align: center;
-    padding: 100px 0;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 50px;
+    overflow: auto;
+}
+
+.hero-elem {
+    margin: 20px;
+}
+
+.hero img {
+    float: right;
+    width: 800px;
+    height: auto;
+}
+
+.hero h1 {
+    padding-top: 150px;
+    font-size: 100px;
+}
+
+.hero h3 {
+    font-weight: normal;
+}
+
+span.special {
+    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+}
+
+.hero-ending {
+    font-size: 30px;
 }
 
 .mission-box {
