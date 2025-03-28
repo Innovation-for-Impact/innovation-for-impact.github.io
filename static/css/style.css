@@ -163,6 +163,20 @@ header {
 /* ===========================
     General Content Styling
     =========================== */
+.highlight{
+    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
+    -webkit-background-clip: text; /* Clips gradient to the text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
+    display: inline; /* Ensures proper text rendering */
+}
+section{
+    background-color: #15253aff;
+}
+h1 {
+    font-size: 30px;
+    text-align:center;
+    color: white;
+}
 .hero {
     background-color: #15253aff;
     color: white;
@@ -178,8 +192,9 @@ header {
 
 .hero img {
     float: right;
-    width: 800px;
+    width: auto;
     height: auto;
+    max-width: 100%;
 }
 
 .hero h1 {
@@ -204,27 +219,61 @@ span.special {
 .mission-box {
     background: #15253aff;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 100px 5%;
+    display: flex;
+    align-items: center;     /* Centers vertically */
+    justify-content: space-space-evenly;    
 }
 
 .mission-box .left{
     width: 50%;
+    padding: 2% 5%;
+    padding-left: 5%;
+    align-items: center;
+}
+
+.mission-box h1{
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.mission-box p{
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.mission-box img{
+    width: auto;
+    height: 350px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);  /* Glowing effect */
+    border-radius: 10px;  /* Optional: adds rounded corners to the image */
 }
 
 .mission-box .right{
-    width: 50%;
+    padding-right: 20%;
+    width: 30%;  /* Adjust the width to your desired percentage */
+    height: auto; /* Maintain aspect ratio */
     display: flex;
-    float: right;
 }
 
-.mission-box .highlight{
-    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
-    -webkit-background-clip: text; /* Clips gradient to the text */
-    -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
-    display: inline; /* Ensures proper text rendering */
+.key-stats{
+    display: flex;
+    justify-content: space-evenly; 
+    background: #15253aff;
+    padding: 40px 5%;
+    text-align: center;
 }
 
+.key-stats h1{
+    font-size: 50px;
+}
+
+.key-stats .stats{
+    color: rgb(255, 255, 255);
+}
 .services .card {
     background: #F8F9FA;
     padding: 20px;
