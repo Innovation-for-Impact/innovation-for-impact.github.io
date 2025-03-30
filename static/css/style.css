@@ -11,7 +11,23 @@ Basic Reset & General Styles
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #192538; /* Ensuring consistent text color */
+    background-color: #15253aff;
+    color: #ffffff; /* Ensuring consistent text color */
+}
+
+.highlight{
+    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
+    -webkit-background-clip: text; /* Clips gradient to the text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
+    display: inline; /* Ensures proper text rendering */
+}
+section{
+    background-color: #15253aff;
+}
+h1 {
+    font-size: 30px;
+    text-align:center;
+    color: white;
 }
 
 /* ===========================
@@ -31,6 +47,7 @@ header {
     margin: 0 auto;
     padding: 15px 20px;   /* Add some padding for spacing */
     background-color: #15253aff;  /* Dark background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow only at the bottom */
 }
 
 /* Navbar Links */
@@ -161,22 +178,8 @@ header {
 }
 
 /* ===========================
-    General Content Styling
+    Home Page Styling
     =========================== */
-.highlight{
-    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
-    -webkit-background-clip: text; /* Clips gradient to the text */
-    -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
-    display: inline; /* Ensures proper text rendering */
-}
-section{
-    background-color: #15253aff;
-}
-h1 {
-    font-size: 30px;
-    text-align:center;
-    color: white;
-}
 .hero {
     background-color: #15253aff;
     color: white;
@@ -246,10 +249,10 @@ span.special {
 }
 
 .mission-box img{
-    width: auto;
-    height: 350px;
+    width: 500%;
+    height: auto;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);  /* Glowing effect */
-    border-radius: 10px;  /* Optional: adds rounded corners to the image */
+    border-radius: 10px;  /* Adds rounded corners to the image */
 }
 
 .mission-box .right{
@@ -294,6 +297,23 @@ span.special {
     text-align: center;
     margin: 10px;
 }
+/* ===========================
+    Projects Page Styling
+    =========================== */
+.projects p {
+    padding: 400px 100px;
+}
+/* ===========================
+    Our Team Page Styling
+    =========================== */
+
+/* ===========================
+    Recruitment Page Styling
+    =========================== */
+
+/* ===========================
+    Contact UsPage Styling
+    =========================== */
 
 /* ===========================
     Footer Styling
