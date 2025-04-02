@@ -1,11 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
+/* ===========================
+Basic Reset & General Styles
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* Added Inter font import */
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #15253aff;
+    color: #ffffff; /* Ensuring consistent text color */
+}
 .container {
     width: 90%;
     max-width: 1000px;
