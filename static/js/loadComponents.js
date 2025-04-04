@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Navbar HTML inserted");
         });
 
-    const loadFooter = fetch('./components/footer.html')
+    const loadFooter = fetch('../components/footer.html')
         .then(response => response.text())
         .then(data => {
             console.log("Footer HTML fetched");
