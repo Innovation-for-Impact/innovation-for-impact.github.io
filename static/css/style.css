@@ -115,9 +115,10 @@ header {
 .dropdown .dropdown-content { /* More specific selector */
     display: none;          /* Hide initially */
     position: absolute;
-    top: 100%; /* Corrected: Position below the dropdown trigger */
+    border-radius: 4px;
+    top: 130%; /* Corrected: Position below the dropdown trigger */
     left: 0;
-    background-color: #15253aff;
+    background-color: rgb(34, 61, 95);
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 10;
@@ -131,12 +132,11 @@ header {
 /* Dropdown Links */
 .dropdown .dropdown-content li { /* More specific selector */
     display: block;
-    padding: 10px;
+    padding: 10px 10px;
 }
 
 .dropdown .dropdown-content a { /* More specific selector */
     color: white;
-    padding: 10px 20px;
     display: block;
 }
 
@@ -159,9 +159,14 @@ header {
     Responsive Design
     =========================== */
 @media (max-width: 768px) {
+
+    /* ===========================
+        Nav Bar
+    =========================== */
     .header_nav {
         flex-direction: column;
         align-items: flex-start;
+        align-items: center;
     }
 
     .header_nav .nav-links { /* More specific selector */
@@ -176,6 +181,106 @@ header {
     .dropdown .dropdown-content { /* More specific selector */
         width: 100%;
     }
+
+    /* ===========================
+        Home Page Responsive Design
+    =========================== */
+    .mission-box {
+        width: 100%;                  /* Full width of the parent container */
+        height: 100vh;                /* Full height of the viewport */
+        margin: 0 !important;         /* Remove any margin */
+        padding: 0 !important;        /* Remove any padding */
+        display: flex;
+        flex-direction: column;
+        align-items: center;          /* Center horizontally */
+        justify-content: center;      /* Center vertically */
+        text-align: center !important; /* Ensures text is centered */
+    }    
+
+    .mission-box .left {
+        width: 100vw !important;  
+        text-align: center !important; 
+    }
+
+    .mission-box .left h1 {
+        padding: 0px !important;
+        text-align: center !important;
+    }
+
+    .mission-box .left p{
+        padding: 0px !important;
+        order: 2;
+    }
+
+    .mission-box .right {
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center;     /* Centers vertically */
+        width: 100% !important;
+        height: 100%;            /* Ensures it takes up full height */
+        padding-right: 0px !important;
+        order: 1;
+    }
+    
+    .mission-box .right img {
+        max-width: 80%; /* Ensures image does not overflow */
+        height: auto;    /* Maintains aspect ratio */
+        display: block;  /* Removes any default inline spacing (important for centering) */
+    }
+}
+@media (max-width: 570px) {
+
+    /* ===========================
+        Footer Responsive Desing
+    =========================== */
+
+    .footer {
+        flex-direction: column;  /* Stack the footer content vertically */
+        align-items: center;     /* Center align all footer content */
+        margin-top: 30px;
+    }
+
+    .footer-left {
+        margin-top: 20px;
+        order: 3;
+    }
+
+    .footer-left .footer-logo{
+        display: none;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px !important; /* controls spacing between CLIENTS and ABOUT US */
+    }
+
+    .footer-links div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* controls spacing between text inside CLIENTS and ABOUT US */
+        margin: 0; /* <-- important */
+        padding: 0; /* <-- also helpful */
+    }
+
+    .footer-links strong,
+    .footer-links a {
+        margin: 0; /* just in case browser adds default */
+        padding: 0;
+    }
+
+    /* Reorder the footer sections: move "CLIENTS" first, then "ABOUT US" */
+    .footer-links div:nth-child(2) {
+        order: 1;
+    }
+
+    .footer-links div:nth-child(1) {
+        order: 2;
+    }
+
 }
 
 /* ===========================
@@ -300,10 +405,14 @@ span.special {
     margin: 10px;
 }
 /* ===========================
-    Projects Page Styling
+    Clients Page Styling
     =========================== */
-.projects p {
+.clients p {
     padding: 400px 100px;
+}
+
+.clients h1{
+    padding-top: 20px;
 }
 /* ===========================
     Our Team Page Styling
@@ -348,6 +457,17 @@ span.special {
         width: 40px;
         margin-right: 10px;
     }
+    .footer-logo a {
+        text-decoration: none; /* Removes underline from the link */
+        color: inherit;        /* Inherit color from the parent, so no color change */
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-links a:hover {
+        color: #a3eacc; /* Change the color on hover (for example, tomato color) */
+    }
+
     .social-icons {
         display: flex;
         gap: 15px;
@@ -356,6 +476,7 @@ span.special {
         color: #7FBF7F;
         font-size: 24px;
         text-decoration: none;
+        align-items: center;
     }
     .social-icons img{
         width: 20px;
