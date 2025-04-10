@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contact Us</title>
+            <link rel="stylesheet" href="/static/css/style.css">
+            <script src="/static/js/loadComponents.js" defer></script>
+    </head>
+    <body>      <!--for now, put clients page on the external projects page, it will include the projects and clients in one place and this line is really long because of no particular reason yey-->
+        <div id="navbar"></div> <!-- Navbar loads dynamically -->
+        <!--use the following website to redirect their email and info to us to contact them: -->
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>Drop us a message through the form below and we'll get back to you</p>
+            <form method="post" action="https://forms.un-static.com/forms/de96d7d392736bd1dc06ff65827abf38e93e66cc">
+                <div class="input-wrapper">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required class="form-input">
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required class="form-input">
+                    <input type="email" id="email" name="email" placeholder="Your e-mail address" required class="form-input">
+                </div>
+                <textarea class="form-input" id="message" name="message" placeholder="Your Message" cols="40" rows="10" required></textarea>
+                <button name="submit" type="submit" class="form-btn">
+                    <span>Send Message</span>
+                </button>
+            </form>
+        <!-- Footer Component -->
+        <div id="footer"></div>
+    </body>
+</html>
