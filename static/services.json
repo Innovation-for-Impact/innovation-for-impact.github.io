@@ -1,0 +1,6 @@
+[
+    { "image": "/static/images/FED_logo.png", "service": "Front-End Development" },
+    { "image": "/static/images/BED_logo.png", "service": "Back-End Development" },
+    { "image": "/static/images/UX_UI_logo.png", "service": "UX/UI Design" },
+    { "image": "/static/images/AI_logo.png", "service": "AI Machine Learning" }
+]

@@ -178,7 +178,7 @@ header {
 
 .hero img {
     float: right;
-    width: 800px;
+    width: 500px;
     height: auto;
 }
 
@@ -225,13 +225,69 @@ span.special {
     display: inline; /* Ensures proper text rendering */
 }
 
-.services .card {
-    background: #F8F9FA;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 10px;
+.services {
+    background: #15253aff;
+    color: white;
+    overflow: auto;
 }
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+
+
+.services img {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin: 20px 100px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
+}
+
+.member {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    display: flex;             /* Enable flexbox */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;
+    transform: translate(15%, -50%);
+}
+
+.member img {
+    position: absolute;
+    transform: translate(80%, -70%);
+    width: 100%;
+    max-width: 75px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.member h3 {
+    
+    color: white;
+    padding-top: 100px;
+    margin: 10px 0 5px;
+    text-align: center;;
+}
+
 
 .clients img {
     width: 100px;
