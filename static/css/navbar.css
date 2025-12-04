@@ -1,0 +1,291 @@
+/* ===========================
+    Navbar Styling
+    =========================== */
+header {
+    background-color: #15253aff; /* Dark background color */
+    padding: 10px 0;
+}
+
+/* Navigation Bar */
+.header_nav {
+    display: flex;
+    justify-content: space-between;  /* Space between logo and menu items */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;   /* Add some padding for spacing */
+    background-color: #15253aff;  /* Dark background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow only at the bottom */
+}
+
+/* Navbar Links */
+.header_nav .nav-links { /* More specific selector */
+    list-style: none;
+    display: flex;          /* Ensure horizontal layout */
+    margin-left: auto;
+    align-items: center;
+    padding: 0;
+}
+
+.header_nav .nav-links li { /* More specific selector */
+    margin: 0 15px;
+}
+
+/* Logo Styling */
+.header_nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_nav .logo img {
+    height: 80px; /* Adjust logo size */
+}
+
+/* Navbar Links Styling */
+.header_nav a {
+    text-decoration: none;
+    color: white;          /* White text color */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 12px 15px;
+}
+
+/* Active and Hover Effects */
+.header_nav a.active {
+    color: #a3eacc;        /* Highlight color for active */
+    font-weight: bold;
+}
+
+.header_nav a:hover {
+    color: #a3eacc;        /* Hover color */
+}
+
+/* Contact Us Link Styling */
+.header_nav .nav-links a.contact-us-link { /* New class for Contact Us link */
+    background: linear-gradient(90deg, #5CC7B2, #69CE9D, #75D589, #A0E370, #CBEC62);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 15px; /* Match other link padding */
+    border-radius: 50px; /* Optional: add rounded corners */
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown .dropdown-content { /* More specific selector */
+    display: none;          /* Hide initially */
+    position: absolute;
+    border-radius: 4px;
+    top: 130%; /* Corrected: Position below the dropdown trigger */
+    left: 0;
+    background-color: rgb(34, 61, 95);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Links */
+.dropdown .dropdown-content li { /* More specific selector */
+    display: block;
+    padding: 10px 10px;
+}
+
+.dropdown .dropdown-content a { /* More specific selector */
+    color: white;
+    display: block;
+}
+
+/* Dropdown Hover Effect */
+.dropdown .dropdown-content a:hover {
+    background: #1abc9c;
+    border-radius: 4px;
+}
+
+/* Chevron Styling */
+.chevron {
+    margin-left: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+
+
+/* ===========================
+    Responsive Design
+    =========================== */
+@media (max-width: 768px) {
+
+    /* ===========================
+        Nav Bar
+    =========================== */
+    .header_nav {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+    }
+
+    .header_nav .nav-links { /* More specific selector */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header_nav .nav-links li { /* More specific selector */
+        margin: 10px 0;
+    }
+
+    .dropdown .dropdown-content { /* More specific selector */
+        width: 100%;
+    }
+
+}
+@media (max-width: 570px) {
+
+    /* ===========================
+        Footer Responsive Desing
+    =========================== */
+
+    .footer {
+        flex-direction: column;  /* Stack the footer content vertically */
+        align-items: center;     /* Center align all footer content */
+        margin-top: 30px;
+    }
+
+    .footer-left {
+        margin-top: 20px;
+        order: 3;
+    }
+
+    .footer-left .footer-logo{
+        display: none;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px !important; /* controls spacing between CLIENTS and ABOUT US */
+    }
+
+    .footer-links div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* controls spacing between text inside CLIENTS and ABOUT US */
+        margin: 0; /* <-- important */
+        padding: 0; /* <-- also helpful */
+    }
+
+    .footer-links strong,
+    .footer-links a {
+        margin: 0; /* just in case browser adds default */
+        padding: 0;
+    }
+
+    /* Reorder the footer sections: move "CLIENTS" first, then "ABOUT US" */
+    .footer-links div:nth-child(2) {
+        order: 1;
+    }
+
+    .footer-links div:nth-child(1) {
+        order: 2;
+    }
+
+}
+
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .footer {
+        background-color: #0D1B2A;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        padding-right: 10%;
+    }
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-logo {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .footer-logo img {
+        width: 40px;
+        margin-right: 10px;
+    }
+    .footer-logo a {
+        text-decoration: none; /* Removes underline from the link */
+        color: inherit;        /* Inherit color from the parent, so no color change */
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-links a:hover {
+        color: #a3eacc; /* Change the color on hover (for example, tomato color) */
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+    .social-icons a {
+        color: #7FBF7F;
+        font-size: 24px;
+        text-decoration: none;
+        align-items: center;
+    }
+    .social-icons img{
+        width: 20px;
+    }
+    .footer-links {
+        display: flex;
+        gap: 100px;
+    }
+    .footer-links div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+    }
+    .footer-bottom {
+        text-align: center;
+        padding: 10px;
+        background-color: #0A1724;
+        color: white;
+    }
+/* ===========================
+    Animations
+    =========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

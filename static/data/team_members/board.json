@@ -1,0 +1,9 @@
+[
+    { "name": "Chiho", "role": "President", "image": "/static/data/team_members/chiho.png", "linkedin": "#" },
+    { "name": "Grace", "role": "Vice President", "image": "/static/data/team_members/grace.png", "linkedin": "#" },
+    { "name": "Prabhleen", "role": "Development Director", "image": "/static/data/team_members/prabhleen.png", "linkedin": "#" },
+    { "name": "Joshua", "role": "Social Director", "image": "/static/data/team_members/joshua.png", "linkedin": "#" },
+    { "name": "Arleen", "role": "Social Director", "image": "/static/data/team_members/arleen.png", "linkedin": "#" },
+    { "name": "Celine", "role": "Marketing Director", "image": "/static/data/team_members/celine.png", "linkedin": "#" },
+    { "name": "Christian", "role": "Business Director", "image": "/static/data/team_members/christian.png", "linkedin": "#" }
+]

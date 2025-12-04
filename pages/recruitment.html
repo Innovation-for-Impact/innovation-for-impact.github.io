@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Recruitment</title>
-            <link rel="stylesheet" href="/static/css/style.css">
-            <script src="/static/js/loadComponents.js" defer></script>
-    </head>
-    <body>
-        <div id="navbar"></div> <!-- Navbar loads dynamically -->
-        <main>
-            <h1>Recruitment</h1>
-        </main>
-        <!-- Footer Component -->
-        <div id="footer"></div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruitment</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/recruitment.css" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <script src="/static/js/loadComponents.js" defer></script>
+    <script src="/static/js/recruitment.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <main class="recruitment-page">
+      <section class="recruitment-hero">
+
+        <h1 class="recruitment-heading">Join Us</h1>
+
+        <!-- JS will inject either the timeline or closed message here -->
+        <div id="recruitment-content"></div>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+  </body>
 </html>

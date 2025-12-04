@@ -1,0 +1,108 @@
+{
+  "summary": {
+    "statNumber": "8+",
+    "statLabel": "Clients Served",
+    "intro": "At Innovation For Impact, we’ve worked with student orgs, startups, and local businesses to ship data-driven, design-forward products."
+  },
+"experience": [
+  {
+    "label": "Artificial Intelligence / Machine Learning",
+    "description": "We prototype and deploy ML models for tasks like classification, recommendation, and forecasting. Projects range from small internal experiments to end-to-end pipelines that integrate with client products."
+  },
+  {
+    "label": "Front-End Development",
+    "description": "We ship responsive, accessible UIs using modern frameworks and clean component systems. Our focus is on intuitive flows, fast load times, and making complex data feel simple."
+  },
+  {
+    "label": "Back-End Development",
+    "description": "We design APIs, data models, and services that are reliable and easy to maintain. This includes integrating third-party APIs, building dashboards, and handling authentication and analytics."
+  },
+  {
+    "label": "UI / UX Design",
+    "description": "We work with clients to refine user journeys, wireframes, and visual systems. From quick clickable prototypes to polished design systems, we keep user needs and clarity at the center."
+  }
+],
+  "testimonials": [
+    {
+      "name": "Celine Darvas",
+      "role": "Marketing Director",
+      "quote": "IFI was amazing to work with. The team was responsive, creative, and shipped exactly what we needed."
+    },
+    {
+      "name": "Arleen Cheema",
+      "role": "Co-Social Director",
+      "quote": "They felt like an extension of our own org – super professional, but still fun and easy to collaborate with."
+    }
+  ],
+  "projects": {
+    "internal": [
+      {
+        "name": "IFI Website",
+        "type": "Internal Project",
+        "description": "Our homepage website you're on right now! Built to showcase our work and make it easy to get in touch.",
+        "thumbLetter": "IFI",
+        "thumbImage": "/static/images/IFI_logo.png"
+      },
+      {
+        "name": "Lore",
+        "type": "Internal Project",
+        "description": "TODO",
+        "thumbLetter": "L",
+        "thumbImage": "/static/images/clients/datadashboard.png"
+      }
+    ],
+    "external": [
+      {
+        "name": "Inora",
+        "type": "External Project",
+        "description": "TODO",
+        "thumbLetter": "I",
+        "thumbImage": "/static/images/clients/inora.png",
+        "link": "https://inora.com"
+      },
+      {
+        "name": "New Haptics",
+        "type": "External Project",
+        "description": "TODO",
+        "thumbLetter": "NH",
+        "thumbImage": "/static/images/clients/newhaptics.png",
+        "link": "https://newhaptics.com"
+      },
+      {
+        "name": "Optilogic",
+        "type": "External Project",
+        "description": "TODO",
+        "thumbLetter": "O",
+        "thumbImage": "/static/images/clients/optilogic.png",
+        "link": "https:/optilogic.com"
+      },
+      {
+        "name": "Menlo",
+        "type": "External Project",
+        "description": "TODO",
+        "thumbLetter": "M",
+        "link": "https://menlo.com"
+      },
+      {
+        "name": "MTutor",
+        "type": "External Project",
+        "description": "TODO",
+        "thumbLetter": "MT",
+        "thumbImage": "/static/images/clients/mtutor.png"
+      },
+      {
+        "name": "Avodah",
+        "type": "External Project",
+        "description": "TODO",
+        "thumbLetter": "A",
+        "thumbImage": "/static/images/clients/avodah.png"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Interested?",
+    "body": "Reach out and we’d love to discuss what IFI can build for you.",
+    "buttonText": "Contact Us",
+    "buttonHref": "/pages/contact-us.html"
+  }
+}

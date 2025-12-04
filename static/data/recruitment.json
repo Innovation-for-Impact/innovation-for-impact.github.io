@@ -1,0 +1,53 @@
+{
+  "isRecruiting": true,
+  "cycleTitle": "Fall 2025 Recruitment Timeline",
+  "apply": {
+    "text": "Apply",
+    "url": "https://example.com/apply"
+  },
+  "announcementWhenClosed": "Recruitment is currently closed. We will announce our next cycle here and on Instagram @yourclubhandle.",
+  "timeline": [
+    {
+      "date": "September 9",
+      "title": "Festifall",
+      "location": "Location",
+      "time": "6–8pm"
+    },
+    {
+      "date": "September 15",
+      "title": "Mass Meeting 1",
+      "location": "Location",
+      "time": "6–8pm"
+    },
+    {
+      "date": "September 20",
+      "title": "Mass Meeting 2",
+      "location": "Location",
+      "time": "6–8pm"
+    },
+    {
+      "date": "September 22",
+      "title": "Application Due",
+      "location": "Online",
+      "time": "11:59pm"
+    },
+    {
+      "date": "September 25",
+      "title": "Speed Dating",
+      "location": "Location",
+      "time": "6–8pm"
+    },
+    {
+      "date": "September 30",
+      "title": "Interviews",
+      "location": "Location",
+      "time": "6–8pm"
+    },
+    {
+      "date": "October 5",
+      "title": "Decisions Released",
+      "location": "Email",
+      "time": "11:59pm"
+    }
+  ]
+}

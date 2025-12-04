@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Internal Projects</title>
-            <link rel="stylesheet" href="/static/css/style.css">
-            <script src="/static/js/loadComponents.js" defer></script>
-    </head>
-    <body>      <!--for now, put clients page on the external projects page, it will include the projects and clients in one place and this line is really long because of no particular reason yey-->
-        <div id="navbar"></div> <!-- Navbar loads dynamically -->
-        <main class = "clients">
-            <h1> Clients </h1>
-            <section class = "our-experience">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clients</title>
 
-            </section>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/clients.css" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
 
-            <section id = "external-clients">
-                <h2>hihihi</h2>
-                <p></p>
-            </section>
+    <script src="/static/js/loadComponents.js" defer></script>
+    <script src="/static/js/clients.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar"></div>
 
-            <section class = "projects">
-                <h2 id = "internal-clients">Internal Projects</h1> 
-                <p>include projects</p>
-            </section>            
-        </main>
-        <!-- Footer Component -->
-        <div id="footer"></div>
-    </body>
+    <main class="clients-page">
+      <div class="clients-inner">
+        <!-- HERO -->
+        <section class="clients-hero">
+          <h1 class="clients-title">CLIENTS</h1>
+
+          <!-- Stat (e.g. 8+ Clients Served) -->
+          <div id="clients-stat" class="clients-stat"></div>
+
+          <!-- Intro paragraph -->
+          <p id="clients-intro" class="clients-intro"></p>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="clients-experience" id="our-experience">
+          <h2 class="section-heading">Our Experience</h2>
+          <ul id="experience-list" class="experience-list"></ul>
+        </section>
+
+        <!-- TESTIMONIALS -->
+
+        <!-- PROJECTS -->
+        <section class="clients-projects">
+          <h2 class="section-heading" id="internal-clients">
+            Internal Projects
+          </h2>
+          <div id="internal-projects" class="projects-grid"></div>
+
+          <h2 class="section-heading section-heading--spaced" id="external-clients">
+            External Projects
+          </h2>
+          <div id="external-projects" class="projects-grid"></div>
+        </section>
+
+                <section class="clients-testimonials">
+          <h2 class="section-heading">Client Testimonials</h2>
+          <div id="testimonials-grid" class="testimonials-grid"></div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="clients-cta">
+          <!-- JS fills this -->
+        </section>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+  </body>
 </html>

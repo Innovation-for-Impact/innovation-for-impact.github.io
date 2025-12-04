@@ -1,107 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFI Website</title>
-    <link rel="stylesheet" href="./static/css/style.css"> <!-- Updated CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innovation For Impact - U-M Technical Consulting</title>
+  <link rel="stylesheet" href="static/css/navbar.css" />
+  <link rel="stylesheet" href="static/css/style.css" />
 </head>
+
+
 <body>
+  <div id="navbar"> </div>
 
-    <!-- Navbar Component -->
-    <div id="navbar"></div>
+  <main class="home-page">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="hero-kicker">Innovation For Impact</span>
+          <h1 class="hero-heading">
+            University of Michigan<br />
+            Technical Consulting Group
+          </h1>
+          <p class="hero-text">
+            Our organization <span class="highlight">focuses on skill development</span>
+            through <span class="highlight">hands-on projects</span> and
+            <span class="highlight">continuous learning</span>. We provide
+            <span class="highlight">real-world experience</span> with
+            <span class="highlight">pro bono consulting</span>.
+          </p>
+          <p class="hero-sub">
+            Interested in collaborating?
+            <span class="highlight">Email us or become a client.</span>
+          </p>
+        </div>
+        <div class="hero-art">
+          <!-- <svg class="hero-blob-image" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#5cc7b2;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#a0e370;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#grad1)" d="M44.7,-76.4C58.8,-69.3,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.8C64.8,56.4,53.8,69,39.8,76.8C25.8,84.6,8.9,87.6,-6.3,85.4C-21.5,83.2,-35.1,75.8,-48.3,67.8C-61.5,59.8,-74.3,51.2,-81.8,38.9C-89.3,26.6,-91.5,10.6,-89.2,-4.3C-86.9,-19.2,-80.1,-32.9,-71.4,-45.2C-62.7,-57.5,-52.1,-68.4,-39.2,-76.2C-26.3,-84,-11.5,-88.7,2.4,-92.8C16.3,-96.9,30.6,-83.5,44.7,-76.4Z" transform="translate(100 100)" />
+          </svg> -->
 
-    <!-- Main Content -->
-    <main>
-        <!-- TODO: Brandon's Banner -->
-        <section class="hero">
-            <div>
-                <img src="/static/images/Gradient_logo.png">
-                <h1 class="hero-elem">Innovation for Impact</h1>
-                <h3 class="hero-elem"><i>University of Michigan Technical<br>Consulting Group</i></h3>
-                <p class="hero-elem">
-                    Our organization 
-                    <span class="highlight">focuses on skill development</span> 
-                    through 
-                    <span class="highlight">hands-on projects</span> 
-                    and 
-                    <span class="highlight">continuous learning</span>. 
-                    We provide 
-                    <span class="highlight">real-world experience</span> 
-                    with 
-                    <span class="highlight">pro bono consulting</span>, 
-                    helping members 
-                    <span class="highlight">expand coding skills</span> 
-                    while engaging with the community.
-                </p>
-                
-                <p class="hero-elem hero-ending"><i>
-                    Interested in collaborating? 
-                    <span class="highlight">Email us!</span>
-                </i></p>
-            </div>
-            
-        </section>
+          <img
+            class="hero-blob-image"
+            src="/static/images/Gradient_logo.png"
+            alt="Abstract Blob Art"
+          />
+        </div>
+      </div>
+    </section>
 
-        <!-- TODO: Han Student powered -->
-        <section class="mission-box">
-            <div class="left"> <!-- Introduction-->
-                <h1>Student </br> <span class="highlight">Powered.</span></h1>
-                <p>Innovation for Impact is a <span class="highlight"> technical consulting group </span>
-                    focused on skill development through <span class="highlight">hands-on projects. </span>
-                    Our members—studying <span class="highlight">CS, UX, Data Science, and Business</span>—engage
-                    in <span class="highlight">pro bono consulting</span> to expand <span class="highlight">coding skills </span>
-                    and <span class="highlight">connect with the community. </span>
-                    We also collaborate with other organizations to <span class="highlight">foster cross-disciplinary learning. </span> </p>
-            </div>
-            <div class="right"> <!-- team picture-->
-                <img src="/static/images/group-picture-informal.jpg" alt="W25 IFI team photo">
-            </div>
-        </section>
+    <!-- MISSION -->
+    <section class="mission-box">
+      <div class="mission-inner">
+        <div class="mission-copy">
+          <h1>Student <span class="highlight">Powered.</span></h1>
+          <p>
+            Innovation for Impact is a <span class="highlight">technical consulting group</span>
+            focused on skill development through <span class="highlight">hands-on projects.</span>
+            Our members—studying <span class="highlight">CS, UX, Data Science, and Business</span>—engage
+            in <span class="highlight">pro bono consulting</span> to expand
+            <span class="highlight">coding skills</span> and
+            <span class="highlight">connect with the community.</span>
+          </p>
+        </div>
+        <div class="mission-image">
+          <img src="/static/images/group-picture-informal.jpg" alt="Mission Image" />
+        </div>
+      </div>
+    </section>
 
-        <!-- Key Stats Section -->
-        <section class="key-stats">
-            <div class="stats"> 
-                <h1>30</h1>
-                <h2 class="highlight">Members</h2>
-            </div> 
-            <div class="stats"> 
-                <h1>10+</h1>
-                <h2 class="highlight">Majors</h2>
-            </div> 
-            <div class="stats">
-                <h1>7+</h1>
-                <h2 class="highlight">Clients</h2>
-            </div> 
-        </section>
+    <!-- STATS -->
+    <section class="key-stats">
+      <div class="stats-grid">
+        <div class="stats">
+          <h1>30</h1>
+          <h2>Members</h2>
+        </div>
+        <div class="stats">
+          <h1>10+</h1>
+          <h2>Majors</h2>
+        </div>
+        <div class="stats">
+          <h1>7+</h1>
+          <h2>Clients</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <p class="service-title">Front-End Development</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <p class="service-title">Back-End Development</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <p class="service-title">UX/UI Design</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <p class="service-title">AI/Machine Learning</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="home-clients">
+      <h2>Our Clients</h2>
+      <div class="home-clients-logos">
+        <img src="/static/images/clients/inora.png" alt="Inora logo" />
+        <img src="/static/images/clients/optilogic.png" alt="Optilogic logo" />
+        <img src="/static/images/clients/newhaptics.png" alt="New Haptics logo" />
+      </div>
+    </section>
 
 
-        <!-- Services Section -->
-        <section class="services">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <!-- Member cards loaded dynamically -->
-            </div>
-            <img src="static/images/IFI_services.png">
-        </section>
+    <!-- TESTIMONIALS -->
+    <section class="home-testimonials">
+      <h2>Testimonials</h2>
+      <div class="home-testimonial-card">
+        <div class="home-testimonial-image">
+          <svg viewBox="0 0 100 100" style="width:100%;max-width:200px;">
+            <circle cx="50" cy="50" r="40" fill="#fff" opacity="0.2"/>
+            <text x="50" y="60" font-size="40" text-anchor="middle" fill="#fff">💬</text>
+          </svg>
+        </div>
+        <div class="home-testimonial-content">
+          <p class="home-testimonial-quote">
+            "My favorite thing about Innovation For Impact is how hands-on and collaborative
+            the projects are. I've learned so much from my teammates and our client partners."
+          </p>
+          <p class="home-testimonial-name">Celine Darvas</p>
+          <p class="home-testimonial-role">Marketing Director</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <!-- Clients Section -->
-        <section class="clients">
-            <h1>Our Clients</h1>
-            
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            
-        </section>
-    </main>
-
-    <!-- Footer Component -->
-    <div id="footer"></div>
-
-    <!-- JavaScript to load components -->
-    <script src="./static/js/loadComponents.js"></script>
-
+  <div id="footer"></div>
 </body>
+<script src="static/js/loadComponents.js"></script>
 </html>

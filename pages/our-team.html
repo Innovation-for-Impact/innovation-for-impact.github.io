@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet The Team</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/team.css" />
+    <link rel="stylesheet" href="/static/css/navbar.css" />
+    <script src="/static/js/loadComponents.js" defer></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="team-page">
+        <!-- Hero banner -->
+        <section class="team-hero">
+            <div class="team-hero-image-wrapper">
+                <!-- Change this path to your real team banner image -->
+                <img
+                    src="/static/images/group-photo-header.png"
+                    alt="IFI Team"
+                    class="team-hero-image"
+                />
+                <div class="team-hero-overlay"></div>
+                <h1 class="team-hero-title">Meet The Team</h1>
+            </div>
+        </section>
+
+        <section class="team-main">
+
+            <!-- Executive Board -->
+            <section class="team-section">
+                <div class="team-section-header">
+                    <h2 class="team-section-title">Executive Board</h2>
+                    <div class="team-section-divider"></div>
+                </div>
+                <div class="board-grid">
+                    <!-- Member cards loaded dynamically by team.js -->
+                </div>
+            </section>
+
+            <!-- Web Designers / Members -->
+            <section class="team-section">
+                <div class="team-section-header">
+                    <h2 class="team-section-title">Members</h2>
+                    <div class="team-section-divider"></div>
+                </div>
+                <div class="team-grid">
+                    <!-- Member cards loaded dynamically by team.js -->
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/static/js/team.js" defer></script>
+</body>
+</html>

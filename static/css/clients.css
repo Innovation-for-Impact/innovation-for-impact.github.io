@@ -1,0 +1,407 @@
+/* ===========================
+   Clients Page Layout
+   =========================== */
+
+.clients-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #1f2937 0%, #020617 55%, #020617 100%);
+  color: #f9fafb;
+  padding-bottom: 4rem;
+  padding-top: 90px; /* room for navbar */
+  position: relative;
+  overflow: hidden;
+}
+
+.clients-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* soft gradient blobs */
+.clients-page::before,
+.clients-page::after {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #bbf7d0 0%, #4ade80 45%, #22c55e 70%, transparent 75%);
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.clients-page::before {
+  top: -120px;
+  left: -140px;
+}
+
+.clients-page::after {
+  bottom: -160px;
+  right: -180px;
+}
+
+/* ===========================
+   Hero + Logos
+   =========================== */
+
+/* ===========================
+   Hero + Logos
+   =========================== */
+
+.clients-hero {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.clients-title {
+  font-size: 2.4rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* stat: 8+ Clients Served */
+.clients-stat {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.clients-stat-number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #84cc16;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.clients-stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #94a3b8;
+}
+
+/* logo grid */
+.clients-logo-grid {
+  margin: 0 auto 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 500px;
+}
+
+.client-logo-card {
+  background: #020617;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
+  text-decoration: none;
+}
+
+.client-logo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.client-logo-card span {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #f9fafb;
+}
+
+/* intro text */
+.clients-intro {
+  max-width: 640px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-top: 1.2rem;
+}
+
+/* ===========================
+   Our Experience – Accordion
+   =========================== */
+
+.section-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.clients-experience {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 520px;
+}
+
+/* one accordion row */
+.experience-item {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.6);
+}
+
+/* clickable header row */
+.experience-header {
+  width: 100%;
+  padding: 0.9rem 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #f9fafb;
+}
+
+.experience-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* little + icon on the right */
+.experience-toggle-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+/* body / panel */
+.experience-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+  padding-right: 1rem;
+}
+
+.experience-body-inner {
+  padding-bottom: 0.9rem;
+}
+
+/* open state */
+.experience-item.open .experience-toggle-icon {
+  transform: rotate(45deg); /* + → x-ish */
+}
+
+.experience-item.open .experience-body {
+  max-height: 400px; /* big enough for text */
+}
+
+/* just in case any old bar markup is still around */
+.experience-bar {
+  display: none !important;
+}
+
+/* tweak on small screens */
+@media (max-width: 768px) {
+  .experience-list {
+    max-width: 100%;
+  }
+}
+/* ===========================
+   Testimonials
+   =========================== */
+
+.clients-testimonials {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial-card {
+  background: #020617;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.85);
+  padding: 1.5rem 1.4rem;
+}
+
+.testimonial-card h3 {
+  margin-bottom: 0.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.testimonial-role {
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  color: #a5b4fc;
+}
+
+.testimonial-quote {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* ===========================
+   Projects
+   =========================== */
+
+.clients-projects {
+  margin-top: 2.5rem;
+}
+
+.section-heading--spaced {
+  margin-top: 2.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card {
+  background: transparent;
+  color: #020617;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.9);
+  display: flex;
+  flex-direction: row;
+}
+
+.project-thumb {
+  width: 110px;
+  background: transparent;
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 1rem 1.2rem 1.2rem;
+  flex: 1;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #f9fafb;
+}
+
+.project-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+  color: #16a34a;
+}
+
+.project-tag--external {
+  color: #2563eb;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #f9fafb;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* ===========================
+   CTA
+   =========================== */
+
+.clients-cta {
+  margin-top: 3rem;
+  padding: 1.6rem 1.4rem;
+  border-radius: 16px;
+  border: 1px solid rgba(132, 204, 22, 0.7);
+  background: rgba(22, 163, 74, 0.08);
+}
+
+.clients-cta h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.clients-cta p {
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.clients-cta-button {
+  display: inline-block;
+  padding: 0.55rem 1.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(90deg, #5cc7b2, #69ce9d, #a0e370, #cbec62);
+  color: #0f172a;
+  box-shadow: 0 0 14px rgba(74, 222, 128, 0.7);
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+
+@media (max-width: 768px) {
+  .clients-page {
+    padding-top: 80px;
+  }
+
+  .clients-title {
+    font-size: 2rem;
+  }
+
+  .clients-stat {
+    padding: 1rem 2.3rem;
+  }
+}

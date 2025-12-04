@@ -1,0 +1,5 @@
+[
+    { "name": "Brandon", "image": "/static/data/team_members/Brandon.jpg", "role": "Member", "linkedin": "#" },
+    { "name": "Jaslin", "image": "/static/data/team_members/Jaslin.jpg", "role": "Member", "linkedin": "#" },
+    { "name": "Han", "image": "/static/data/team_members/Han.jpg", "role": "Member", "linkedin": "#" }
+]
