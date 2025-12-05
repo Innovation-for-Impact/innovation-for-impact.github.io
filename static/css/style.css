@@ -21,6 +21,7 @@
       position: relative;
       padding: 6rem 7% 8rem;
       overflow: hidden;
+      min-height: 100vh;
     }
 
     .hero::before {
